@@ -95,5 +95,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2eecdb6552bc3c4c9038f54b057bcf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VidaDaTropa: 100
-  dano: 200
+  vidaDaTropa: 10
