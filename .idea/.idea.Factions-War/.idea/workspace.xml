@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/spawnAreaScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/spawnAreaScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tropas Atacantes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tropas Atacantes/Quadrado Forte.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tropas Atacantes/Quadrado Forte.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tropas Atacantes/Quadrado Fraco.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tropas Atacantes/Quadrado Fraco.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tropas Atacantes/Quadrado Super Forte.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tropas Atacantes/Quadrado Super Forte.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptVida.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptVida.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnerDeTropasAtacantes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnerDeTropasAtacantes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Square.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Square.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/spawnAreaScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/spawnAreaScript.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650311477861</updated>
       <workItem from="1650311513135" duration="584000" />
+      <workItem from="1650312791060" duration="1487000" />
     </task>
     <servers />
   </component>
@@ -76,6 +91,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

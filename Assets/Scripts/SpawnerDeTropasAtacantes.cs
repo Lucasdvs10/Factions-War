@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,11 +13,7 @@ public class SpawnerDeTropasAtacantes : MonoBehaviour
         spawnarTropaNaFilaEmSegundos(3.0f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
 
     public void spawnarTropaNaFilaEmSegundos(float segundosParaSpawnarTropa)
     {
@@ -39,5 +36,10 @@ public class SpawnerDeTropasAtacantes : MonoBehaviour
     private bool ExistemTropasQueSeramSpawnadas()
     {
         return TropasQueSeramSpawnadas.Count > 0;
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, Vector3.one * 1.5f);
     }
 }

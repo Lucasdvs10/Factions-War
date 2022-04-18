@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
+
 public class spawnAreaScript : MonoBehaviour
 {
     [SerializeField] private GameObject tropa;
@@ -17,5 +19,11 @@ public class spawnAreaScript : MonoBehaviour
             // Debug just to test if the code is working :)
             Debug.Log("ta spawnando");
 
+    }
+    
+    private void OnDrawGizmos() {
+        var collider = GetComponent<BoxCollider2D>();
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(transform.position + new Vector3(collider.offset.x, collider.offset.y, 0), collider.bounds.extents * 2);
     }
 }
