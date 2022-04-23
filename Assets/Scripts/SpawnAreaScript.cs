@@ -3,16 +3,16 @@ using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
 
-public class spawnAreaScript : MonoBehaviour
+public class SpawnAreaScript : MonoBehaviour
 {
-    [SerializeField] private GameObject tropa;
+    [SerializeField] private GameObject _troop;
     [SerializeField] private int offSet = 12;
 
     public static event Action OnTropaInstatiation;
     
     // Spawning Method
     public void OnMouseDown(){
-            Instantiate(tropa, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
+            Instantiate(_troop, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
             
             OnTropaInstatiation?.Invoke();
             

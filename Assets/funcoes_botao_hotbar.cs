@@ -7,7 +7,7 @@ public class funcoes_botao_hotbar : MonoBehaviour
 {
   
 
-public void Funcao_botao(){
-    Debug.Log("Ai Ai");
-}
+    public void Funcao_botao(){
+        Debug.Log("Ai Ai");
+    }
 }

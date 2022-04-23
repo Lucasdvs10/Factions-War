@@ -1,27 +1,26 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnerDeTropasAtacantes : MonoBehaviour
 {
-    private Queue<GameObject> TropasQueSeramSpawnadas;
+    private Queue<GameObject> _tropasQueSeramSpawnadas;
     public GameObject[] vetorDeInicializacaoDaFilaDeTropas;
     void Start()
     {
-        this.TropasQueSeramSpawnadas = new Queue<GameObject>(vetorDeInicializacaoDaFilaDeTropas);
-        spawnarTropaNaFilaEmSegundos(3.0f);
+        this._tropasQueSeramSpawnadas = new Queue<GameObject>(vetorDeInicializacaoDaFilaDeTropas);
+        SpawnarTropaNaFilaEmSegundos(3.0f);
     }
 
 
 
-    public void spawnarTropaNaFilaEmSegundos(float segundosParaSpawnarTropa)
+    public void SpawnarTropaNaFilaEmSegundos(float segundosParaSpawnarTropa)
     {
         StartCoroutine(spawnarTropaNaFilaEmSegundosCorrotina(segundosParaSpawnarTropa));
     }
 
     public void AdicionarTropaNaFilaParaSerSpawnadas(GameObject tropa){
-        TropasQueSeramSpawnadas.Enqueue(tropa);
+        _tropasQueSeramSpawnadas.Enqueue(tropa);
     }
 
     private IEnumerator spawnarTropaNaFilaEmSegundosCorrotina(float segundosParaSpawnarTropa)
@@ -29,13 +28,13 @@ public class SpawnerDeTropasAtacantes : MonoBehaviour
         while (ExistemTropasQueSeramSpawnadas())
         {
             yield return new WaitForSeconds(segundosParaSpawnarTropa);
-            Instantiate(TropasQueSeramSpawnadas.Dequeue());
+            Instantiate(_tropasQueSeramSpawnadas.Dequeue());
         }
     }
 
     private bool ExistemTropasQueSeramSpawnadas()
     {
-        return TropasQueSeramSpawnadas.Count > 0;
+        return _tropasQueSeramSpawnadas.Count > 0;
     }
 
     private void OnDrawGizmos() {

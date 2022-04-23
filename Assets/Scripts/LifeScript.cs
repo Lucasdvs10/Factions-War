@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class ScriptVida : MonoBehaviour
+public class LifeScript : MonoBehaviour
 {
     [SerializeField] private float vidaDaTropa;
     
