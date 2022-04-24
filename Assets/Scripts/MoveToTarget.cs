@@ -6,12 +6,16 @@ public class MoveToTarget : MonoBehaviour
     
     [SerializeField]
     private float _speed;
+
+    [SerializeField]
+    private float _speedDecrementWhenShooting;
     
     private Rigidbody2D _rigidbody;
     
     void Start()
     {
         _rigidbody = this.GetComponent<Rigidbody2D>();
+        //ApplySlowness(_speedDecrementWhenShooting);
     }
 
     private void FixedUpdate()
@@ -24,5 +28,10 @@ public class MoveToTarget : MonoBehaviour
         
         //Changes position of Attacker through time
         _rigidbody.MovePosition(transform.position + (velocity * Time.deltaTime));
+    }
+
+    private void ApplySlowness(float speedDecrement)
+    {
+        _speed -= speedDecrement;
     }
 }
