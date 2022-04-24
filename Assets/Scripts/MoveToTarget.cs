@@ -7,16 +7,22 @@ public class MoveToTarget : MonoBehaviour
     [SerializeField]
     private float _speed;
     
-    void Update()
+    private Rigidbody2D _rigidbody;
+    
+    void Start()
+    {
+        _rigidbody = this.GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate()
     {
         //Distance between Attacker and Target
         Vector3 distanceFromTarget = _target.position - transform.position;
-        
         //Normalized gets direction with a given vector
         Vector3 direction = distanceFromTarget.normalized;
         Vector3 velocity = direction * _speed;
         
         //Changes position of Attacker through time
-        transform.Translate(velocity * Time.deltaTime);
+        _rigidbody.MovePosition(transform.position + (velocity * Time.deltaTime));
     }
 }
