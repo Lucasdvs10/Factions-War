@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4284519206328470280}
   - component: {fileID: 4284519206328470281}
   m_Layer: 0
-  m_Name: Spawner de Tropas Atacantes
+  m_Name: Attack Troops Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f38f408bbe40564ebcf0063f15b28c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vetorDeInicializacaoDaFilaDeTropas:
+  initializingVectorForTroopQueue:
   - {fileID: 3885552614170146329, guid: 8314b66ea23a53848803124a86ccb04a, type: 3}
-  - {fileID: 497591975822643879, guid: ff8171cc395047642ba447ec5cb0c10b, type: 3}
   - {fileID: 8370134375586665397, guid: b999cde9f7ce95943ad6107a00c3cb04, type: 3}
+  - {fileID: 497591975822643879, guid: ff8171cc395047642ba447ec5cb0c10b, type: 3}
