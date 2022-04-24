@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class SpawnerDeTropasAtacantes : MonoBehaviour
 {
-    private Queue<GameObject> TropasQueSeramSpawnadas;
-    public GameObject[] vetorDeInicializacaoDaFilaDeTropas;
+    private Queue<GameObject> TroopsToBeSpawned;
+    public GameObject[] InitializingVectorForTroopQueue;
     void Start()
     {
-        this.TropasQueSeramSpawnadas = new Queue<GameObject>(vetorDeInicializacaoDaFilaDeTropas);
-        spawnarTropaNaFilaEmSegundos(3.0f);
+        this.TroopsToBeSpawned = new Queue<GameObject>(InitializingVectorForTroopQueue);
+        SpawnTroopsInSeconds(3.0f);
     }
 
     // Update is called once per frame
@@ -18,26 +18,26 @@ public class SpawnerDeTropasAtacantes : MonoBehaviour
 
     }
 
-    public void spawnarTropaNaFilaEmSegundos(float segundosParaSpawnarTropa)
+    public void SpawnTroopsInSeconds(float SecondsToSpawnTroop)
     {
-        StartCoroutine(spawnarTropaNaFilaEmSegundosCorrotina(segundosParaSpawnarTropa));
+        StartCoroutine(SpawnTroopsInSecondsCorotine(SecondsToSpawnTroop));
     }
 
-    public void AdicionarTropaNaFilaParaSerSpawnadas(GameObject tropa){
-        TropasQueSeramSpawnadas.Enqueue(tropa);
+    public void AddTroopInTheSpawnQueue(GameObject tropa){
+        TroopsToBeSpawned.Enqueue(tropa);
     }
 
-    private IEnumerator spawnarTropaNaFilaEmSegundosCorrotina(float segundosParaSpawnarTropa)
+    private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop)
     {
-        while (ExistemTropasQueSeramSpawnadas())
+        while (ExistsTroopsInQueueToBeSpawned())
         {
-            yield return new WaitForSeconds(segundosParaSpawnarTropa);
-            Instantiate(TropasQueSeramSpawnadas.Dequeue());
+            yield return new WaitForSeconds(SecondsToSpawnTroop);
+            Instantiate(TroopsToBeSpawned.Dequeue());
         }
     }
 
-    private bool ExistemTropasQueSeramSpawnadas()
+    private bool ExistsTroopsInQueueToBeSpawned()
     {
-        return TropasQueSeramSpawnadas.Count > 0;
+        return TroopsToBeSpawned.Count > 0;
     }
 }
