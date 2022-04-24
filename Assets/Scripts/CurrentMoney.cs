@@ -5,8 +5,8 @@ public class CurrentMoney : MonoBehaviour
     private int _currentMoney;
     [SerializeField]private Text _textCurrentMoney;
 
-    public void RefreshTheCurrentMoney(int n)
-    {
+    public void RefreshTheCurrentMoney(int n) {
+        _currentMoney = n;
         _textCurrentMoney.text = n.ToString();
     }
     void Update()
