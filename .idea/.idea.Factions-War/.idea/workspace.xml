@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawn Area.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawn Area.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawner de Tropas Atacantes.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawner de Tropas Atacantes.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/hotbar.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/hotbar.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptVida.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LifeScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptVida.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LifeScript.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnerDeTropasAtacantes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnerDeTropasAtacantes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/spawnAreaScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnAreaScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/funcoes_botao_hotbar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/funcoes_botao_hotbar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveToTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveToTarget.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +58,6 @@
       <updated>1650311477861</updated>
       <workItem from="1650311513135" duration="584000" />
       <workItem from="1650312791060" duration="1487000" />
-      <workItem from="1650328476850" duration="1551000" />
     </task>
     <servers />
   </component>
