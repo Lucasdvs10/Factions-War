@@ -3,28 +3,27 @@ using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
 
-public class SpawnAreaScript : MonoBehaviour
-{
+public class SpawnAreaScript : MonoBehaviour {
     [SerializeField] private GameObject character;
     [SerializeField] private int offSet = 12;
-
+    
+    public static event Action CharacterCreationEvent;
+    public event Action<GameObject> CharacterChangedEvent;
 
     public void SetCharacter(GameObject newCharacter){
         character = newCharacter;   
         CharacterChangedEvent?.Invoke(newCharacter);
     
     }
-    public static event Action CharacterCreationEvent;
-    public event Action<GameObject> CharacterChangedEvent;
-
+    
     // Spawning Method
     public void OnMouseDown(){
-            Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
+        Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
             
-            CharacterCreationEvent?.Invoke();
+        CharacterCreationEvent?.Invoke();
             
-            // Debug just to test if the code is working :)
-           // Debug.Log("ta spawnando");
+        // Debug just to test if the code is working :)
+        // Debug.Log("ta spawnando");
 
     }
     
