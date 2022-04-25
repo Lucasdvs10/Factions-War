@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +7,6 @@ public class TargetRadar : MonoBehaviour
     [SerializeField] string targetTag = "Target";
 
     List<Collider2D> possibleTargets = new List<Collider2D>();
-    GameObject previousTarget = null;
     GameObject currentTarget = null;
 
     //Adds to the possibleTargets list all Collider2D that enters the trigger from this.gameObject if their tag is the same as targetTag.
@@ -36,10 +34,13 @@ public class TargetRadar : MonoBehaviour
     void Update()
     {
         currentTarget = FindClosestTarget();
-        if (currentTarget != previousTarget)
-        {
-            Debug.Log("Exchanged targets");
-        }
+       
+            
+            if (currentTarget != null)
+            {
+                Debug.DrawLine(transform.position, currentTarget.transform.position);
+            }
+        
     }
 
     //Returns the gameObject with the closest position to this.gameObject from the possibleTargets list.
@@ -53,16 +54,11 @@ public class TargetRadar : MonoBehaviour
         {
             Vector3 positionDifference = target.transform.position - thisPosition;
             float distanceToCurrentTarget = positionDifference.sqrMagnitude;
-            if (distanceToCurrentTarget < distanceToClosestTarget)
-            {
+            if (distanceToCurrentTarget < distanceToClosestTarget) {
                 distanceToClosestTarget = distanceToCurrentTarget;
                 closestTarget = target.gameObject;
+                Debug.Log("Exchanged targets");
             }
-        }
-
-        if (currentTarget != null)
-        {
-            Debug.DrawLine(thisPosition, closestTarget.transform.position);
         }
 
         return closestTarget;
