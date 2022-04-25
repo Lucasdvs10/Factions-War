@@ -91,8 +91,9 @@ GameObject:
   - component: {fileID: 4877927531190599478}
   - component: {fileID: 4877927531190599479}
   - component: {fileID: 4877927531190599476}
+  - component: {fileID: 3776571633581309962}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Generic Card UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,9 +201,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4877927531190599482}
         m_TargetAssemblyTypeName: funcoes_botao_hotbar, Assembly-CSharp
-        m_MethodName: Funcao_botao
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -212,3 +213,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3776571633581309962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877927531190599482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b1afaf03952134fb1230ff8ed9fc76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAreacript: {fileID: 0}
+  character: {fileID: 8370134375586665397, guid: b999cde9f7ce95943ad6107a00c3cb04, type: 3}
