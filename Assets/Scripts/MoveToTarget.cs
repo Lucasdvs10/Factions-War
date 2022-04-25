@@ -5,17 +5,19 @@ public class MoveToTarget : MonoBehaviour
     private Transform _target;
     
     [SerializeField]
-    private float _speed;
+    private float _regularSpeed;
 
     [SerializeField]
-    private float _speedDecrementWhenShooting;
+    private float _speedWhenShooting;
+
+    private float _actualSpeed;
     
     private Rigidbody2D _rigidbody;
     
     void Start()
     {
         _rigidbody = this.GetComponent<Rigidbody2D>();
-        //ApplySlowness(_speedDecrementWhenShooting);
+        ApplyRegularSpeed();
     }
 
     private void FixedUpdate()
@@ -24,14 +26,19 @@ public class MoveToTarget : MonoBehaviour
         Vector3 distanceFromTarget = _target.position - transform.position;
         //Normalized gets direction with a given vector
         Vector3 direction = distanceFromTarget.normalized;
-        Vector3 velocity = direction * _speed;
+        Vector3 velocity = direction * _actualSpeed;
         
         //Changes position of Attacker through time
         _rigidbody.MovePosition(transform.position + (velocity * Time.deltaTime));
     }
 
-    private void ApplySlowness(float speedDecrement)
+    private void ApplySpeedWhenShooting()
     {
-        _speed -= speedDecrement;
+        _actualSpeed = _speedWhenShooting;
+    }
+
+    private void ApplyRegularSpeed()
+    {
+        _actualSpeed = _regularSpeed;
     }
 }
