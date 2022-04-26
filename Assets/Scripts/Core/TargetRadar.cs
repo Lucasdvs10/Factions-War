@@ -31,8 +31,8 @@ public class TargetRadar : MonoBehaviour
     }
 
     //Searches for closest target every frame.
-    void Update()
-    {
+    void Update() {
+
         currentTarget = FindClosestTarget();
        
             
