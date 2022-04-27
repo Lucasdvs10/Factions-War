@@ -7,20 +7,23 @@ public class SpawnAreaScript : MonoBehaviour {
     [SerializeField] private GameObject character;
     [SerializeField] private int offSet = 12;
     [SerializeField] GameObject currentMoney;
+
+    int characterCost = 0;
     
     public static event Action CharacterCreationEvent;
     public event Action<GameObject> CharacterChangedEvent;
 
-    public void SetCharacter(GameObject newCharacter){
+    public void SetCharacter(GameObject newCharacter, int value){
         character = newCharacter;   
         CharacterChangedEvent?.Invoke(newCharacter);
+        characterCost = value;
     }
     
     // Spawning Method
     public void OnMouseDown()
     {
         //Checks if there is money to place a character
-        if(currentMoney.GetComponent<CurrentMoney>().UpdateMoney(-20)) //TODO: Update this area when character cost become avaiable
+        if(currentMoney.GetComponent<CurrentMoney>().UpdateMoney(-characterCost))
         {
             Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
         

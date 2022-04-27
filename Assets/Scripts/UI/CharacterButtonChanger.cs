@@ -13,7 +13,7 @@ public class CharacterButtonChanger : MonoBehaviour
 
     //Selects which character will be spawned
     private void ChangeGameObject(){ 
-        spawnAreacript.SetCharacter(character);
+        spawnAreacript.SetCharacter(character, int.Parse(transform.GetChild(0).GetComponent<Text>().text));
     }
 
 }
