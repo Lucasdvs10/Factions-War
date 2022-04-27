@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f246427fa9faa84f9c166f13f8b3a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tropa: {fileID: 3885552614170146329, guid: 8314b66ea23a53848803124a86ccb04a, type: 3}
+  character: {fileID: 0}
   offSet: 12
 --- !u!61 &8447841571735780873
 BoxCollider2D:
@@ -59,7 +59,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.086799145, y: 1.5045204}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}

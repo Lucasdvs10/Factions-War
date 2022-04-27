@@ -6,6 +6,7 @@ using UnityEngine;
 public class SpawnAreaScript : MonoBehaviour {
     [SerializeField] private GameObject character;
     [SerializeField] private int offSet = 12;
+    [SerializeField] GameObject currentMoney;
     
     public static event Action CharacterCreationEvent;
     public event Action<GameObject> CharacterChangedEvent;
@@ -13,17 +14,18 @@ public class SpawnAreaScript : MonoBehaviour {
     public void SetCharacter(GameObject newCharacter){
         character = newCharacter;   
         CharacterChangedEvent?.Invoke(newCharacter);
-    
     }
     
     // Spawning Method
-    public void OnMouseDown(){
-        Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
-            
-        CharacterCreationEvent?.Invoke();
-            
-        // Debug just to test if the code is working :)
-        // Debug.Log("ta spawnando");
+    public void OnMouseDown()
+    {
+        //Checks if there is money to place a character
+        if(currentMoney.GetComponent<CurrentMoney>().UpdateMoney(-20)) //TODO: Update this area when character cost become avaiable
+        {
+            Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
+        
+            CharacterCreationEvent?.Invoke();
+        }
 
     }
     
