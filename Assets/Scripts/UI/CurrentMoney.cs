@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 public class CurrentMoney : MonoBehaviour
 {
     [SerializeField] private int _currentMoney;
