@@ -9,6 +9,8 @@ public class TargetRadar : MonoBehaviour
     List<Collider2D> possibleTargets = new List<Collider2D>();
     GameObject currentTarget = null;
 
+    public GameObject Get_currentTarget() => currentTarget;
+
     //Adds to the possibleTargets list all Collider2D that enters the trigger from this.gameObject if their tag is the same as targetTag.
     void OnTriggerEnter2D(Collider2D other)
     {

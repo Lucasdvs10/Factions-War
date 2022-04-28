@@ -3,20 +3,20 @@ using UnityEngine;
 
 public class LifeScript : MonoBehaviour
 {
-    [SerializeField] private float vidaDaTropa;
+    [SerializeField] private float _troopLife;
     
-    public static event Action<float> OnDanoAcionado;
-    public static event Action OnVidaZerada;
-    public float GetVidaDaTropa() => vidaDaTropa;
+    public static event Action<float> OnDamageFired;
+    public static event Action OnZeroLife;
+    public float Get_troopLife() => _troopLife;
     
     
-    public float AplicarDano(float dano) {
-        OnDanoAcionado?.Invoke(dano);
-        vidaDaTropa -= dano;
-        if (vidaDaTropa <= 0)
+    public float ApplyDamage(float damage) {
+        OnDamageFired?.Invoke(damage);
+        _troopLife -= damage;
+        if (_troopLife <= 0)
         {
-            OnVidaZerada?.Invoke();
+            OnZeroLife?.Invoke();
         }
-        return vidaDaTropa;
+        return _troopLife;
     }
 }
