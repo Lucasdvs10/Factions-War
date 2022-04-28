@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PassiveIncome : MonoBehaviour
 {
-    [SerializeField] CurrentMoney currentMoney;
     [SerializeField] float startTime = 2.0f;
     [SerializeField] float secondsBetweenRepeat = 2.0f;
     [SerializeField] int passiveValue = 0;
@@ -18,6 +17,6 @@ public class PassiveIncome : MonoBehaviour
     //Adds passiveValue to game money.
     void AddPassiveIncome()
     {
-        currentMoney.UpdateMoney(passiveValue);
+        gameObject.GetComponent<CurrentMoney>().UpdateMoney(passiveValue);
     }
 }
