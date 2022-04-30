@@ -5,23 +5,23 @@ public class Tower : MonoBehaviour
 {
     public static event Action OnEnemyAndTowerCollision;
 
-    private TowerLife _towerLife;
+    private TowerHealth _towerHealth;
 
     [SerializeField]
     private float _damageOnCollision;
 
     private void Start()
     {
-        _towerLife = GetComponent<TowerLife>();
+        _towerHealth = GetComponent<TowerHealth>();
     }
 
-    private void OnTriggerEnter2D(Collider2D colliderEnemy)
+    private void OnTriggerEnter2D(Collider2D enemyCollider)
     {
-        if (colliderEnemy.gameObject.CompareTag("")) //Insert enemy tag here
+        if (enemyCollider.gameObject.CompareTag("")) //INSERT ENEMY TAG HERE
         {
-            Destroy(colliderEnemy.gameObject);
-            _towerLife.ApplyDamage(_damageOnCollision);
             OnEnemyAndTowerCollision?.Invoke();
+            Destroy(enemyCollider.gameObject);
+            _towerHealth.ApplyDamage(_damageOnCollision);
         }
     }
 }
