@@ -20,16 +20,18 @@ public class SpawnAreaScript : MonoBehaviour {
     }
     
     // Spawning Method
-    public void OnMouseDown()
-    {
+    public void OnMouseDown() {
         //Checks if there is money to place a character
-        if(currentMoney.GetComponent<CurrentMoney>().UpdateMoney(-characterCost))
+        var currentMoneyComponent = currentMoney.GetComponent<CurrentMoney>();
+        
+        if(currentMoneyComponent.GetCurrentMoney >= characterCost)
         {
             Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
         
+            currentMoneyComponent.UpdateMoney(-characterCost);
+            
             CharacterCreationEvent?.Invoke();
         }
-
     }
     
     private void OnDrawGizmos() {
