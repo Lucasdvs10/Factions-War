@@ -7,6 +7,8 @@ public class Tower : MonoBehaviour
 
     private TowerHealth _towerHealth;
 
+    [SerializeField] private string _enemyTag;
+
     [SerializeField]
     private float _damageOnCollision;
 
@@ -17,7 +19,7 @@ public class Tower : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D enemyCollider)
     {
-        if (enemyCollider.gameObject.CompareTag("")) //INSERT ENEMY TAG HERE
+        if (enemyCollider.gameObject.CompareTag(_enemyTag)) //INSERT ENEMY TAG HERE
         {
             OnEnemyAndTowerCollision?.Invoke();
             Destroy(enemyCollider.gameObject);
