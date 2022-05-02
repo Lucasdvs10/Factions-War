@@ -6,6 +6,8 @@ TagManager:
   tags:
   - StartButton
   - Exit
+  - Attackers
+  - Defenders
   layers:
   - Default
   - TransparentFX
