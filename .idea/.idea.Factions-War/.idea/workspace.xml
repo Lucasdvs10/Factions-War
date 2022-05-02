@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DefenseTroop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DefenseTroop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Round_Money.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Round_Money.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +60,7 @@
       <workItem from="1650311513135" duration="584000" />
       <workItem from="1650312791060" duration="1487000" />
       <workItem from="1650934445949" duration="402000" />
+      <workItem from="1651452090953" duration="816000" />
     </task>
     <servers />
   </component>

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2191808390997069034}
   - component: {fileID: 5986528244087085821}
   - component: {fileID: 6674239109589464663}
+  - component: {fileID: 1266517051}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -79,7 +80,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 'Money: 0'
 --- !u!114 &6674239109589464663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +93,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656a538cc22b6414291f3eb1b5352267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentMoney: 100
   _textCurrentMoney: {fileID: 5986528244087085821}
+--- !u!114 &1266517051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097186170924809636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335037ea7f838674d91ee03e34a4245f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTime: 2
+  secondsBetweenRepeat: 2
+  passiveValue: 10
 --- !u!1 &1149296098916463892
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +229,7 @@ RectTransform:
   m_GameObject: {fileID: 1149296098942024073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1149296098916463895}
   - {fileID: 5142194294445828414}
