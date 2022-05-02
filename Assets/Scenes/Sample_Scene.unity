@@ -237,8 +237,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780874, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: currentMoney
+      value: 
+      objectReference: {fileID: 1425476176}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
 --- !u!1 &519420028
@@ -679,6 +683,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f246427fa9faa84f9c166f13f8b3a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1425476176 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6674239109589464663, guid: 0bfe59aef6d68244399ec7befef4e18b, type: 3}
+  m_PrefabInstance: {fileID: 904463426}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 656a538cc22b6414291f3eb1b5352267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1684738553 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1149296098942024085, guid: 0bfe59aef6d68244399ec7befef4e18b, type: 3}
@@ -763,6 +778,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1188975510}
     m_Modifications:
     - target: {fileID: 148728726129464885, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
+      propertyPath: spawnAreacript
+      value: 
+      objectReference: {fileID: 1400649859}
+    - target: {fileID: 2844910003316275456, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
+      propertyPath: m_Text
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040771384783517849, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
       propertyPath: spawnAreacript
       value: 
       objectReference: {fileID: 1400649859}
@@ -870,6 +893,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5749767348202442017, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
+      propertyPath: m_Text
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810721357988990136, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
+      propertyPath: spawnAreacript
+      value: 
+      objectReference: {fileID: 1400649859}
     - target: {fileID: 6868211729231054264, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
       propertyPath: spawnAreacript
       value: 
