@@ -274,6 +274,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2387762329070207996, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: targetTag
+      value: Defenders
+      objectReference: {fileID: 0}
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Name
       value: DefenseTroop
@@ -281,6 +285,18 @@ PrefabInstance:
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: m_TagString
+      value: Attackers
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501017765987097345, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: m_TagString
+      value: Attackers
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961627290489240821, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: _damageDelayInSeconds
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8296844184890685808, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _troopLife
@@ -292,11 +308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.38
+      value: -3.139
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.85
+      value: -2.716
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -509,9 +525,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2387762329070207996, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: targetTag
+      value: Attackers
+      objectReference: {fileID: 0}
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Name
       value: Troop
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: m_TagString
+      value: Defenders
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961627290489240821, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: _damageDelayInSeconds
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8296844184890685808, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _troopLife
@@ -523,11 +551,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5730684
+      value: -1.46
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8596897
+      value: -2.65
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.z

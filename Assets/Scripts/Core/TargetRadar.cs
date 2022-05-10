@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,10 @@ public class TargetRadar : MonoBehaviour
 
     public GameObject Get_currentTarget() => currentTarget;
 
+    public event Action<GameObject> OnGetCurrentTargetEvent;
+    public event Action CurrentTargetChangedEvent;
+    
+
     //Adds to the possibleTargets list all Collider2D that enters the trigger from this.gameObject if their tag is the same as targetTag.
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,6 +25,7 @@ public class TargetRadar : MonoBehaviour
             {
                 possibleTargets.Add(other);
             }
+            currentTarget = FindClosestTarget();
         }
     }
 
@@ -29,19 +35,16 @@ public class TargetRadar : MonoBehaviour
         if (possibleTargets.Contains(other))
         {
             possibleTargets.Remove(other);
+            currentTarget = FindClosestTarget();
         }
     }
 
     //Searches for closest target every frame.
     void Update() {
-
-        currentTarget = FindClosestTarget();
-       
-            
-            if (currentTarget != null)
-            {
+        if (currentTarget != null) {
                 Debug.DrawLine(transform.position, currentTarget.transform.position);
-            }
+        }
+        
         
     }
 
@@ -60,9 +63,15 @@ public class TargetRadar : MonoBehaviour
                 distanceToClosestTarget = distanceToCurrentTarget;
                 closestTarget = target.gameObject;
                 Debug.Log("Exchanged targets");
+                
+                CurrentTargetChangedEvent?.Invoke();
+
             }
         }
-
+        
+        if(!(closestTarget is null)) {
+            OnGetCurrentTargetEvent?.Invoke(closestTarget);
+        }
         return closestTarget;
     }
 }
