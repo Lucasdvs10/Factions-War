@@ -16,7 +16,6 @@ public class QueueGroup{
         SouthList = southList;
         EastList = eastList;
         WestList = westList;
-
     }
     
 }
