@@ -1,15 +1,14 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackSetupPanel : MonoBehaviour
 {   
-    public GameObject queuePanel;
+    public GameObject queuePanel; 
     private Queue<GameObject> troops;
 
      void Start()
     {
-        this.troops = new Queue<GameObject>();
+        troops = new Queue<GameObject>();
     }
 
     public void AddTroopToQueue(GameObject troop){
@@ -17,4 +16,6 @@ public class AttackSetupPanel : MonoBehaviour
         GameObject troopImage = Instantiate(troop);
         troopImage.transform.SetParent(queuePanel.transform, false);
     }
+
+    public GameObject QueuePanel => queuePanel;
 }
