@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game Test/Game Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Test/Game Test Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawn Area.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawn Area.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Hot_Bar.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Hot_Bar.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnAreaScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnAreaScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
       <workItem from="1651964881628" duration="1095000" />
       <workItem from="1652060279455" duration="775000" />
       <workItem from="1652825359226" duration="617000" />
-      <workItem from="1652826154079" duration="1271000" />
+      <workItem from="1652826154079" duration="1979000" />
     </task>
     <servers />
   </component>
