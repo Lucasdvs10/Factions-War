@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game Test/Game Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game Test/Game Test Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Attack Troops Spawner/Attack Troops/Quadrado Forte.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Attack Troops Spawner/Attack Troops/Quadrado Forte.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Attack Troops Spawner/Attack Troops/Quadrado Fraco.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Attack Troops Spawner/Attack Troops/Quadrado Fraco.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Attack Troops Spawner/Attack Troops/Quadrado Super Forte.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Attack Troops Spawner/Attack Troops/Quadrado Super Forte.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attack Troops Spawner/AttackTroopsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attack Troops Spawner/AttackTroopsSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/MoveToTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/MoveToTarget.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +80,7 @@
       <workItem from="1652060279455" duration="775000" />
       <workItem from="1652825359226" duration="617000" />
       <workItem from="1652826154079" duration="1979000" />
+      <workItem from="1652828850946" duration="800000" />
     </task>
     <servers />
   </component>

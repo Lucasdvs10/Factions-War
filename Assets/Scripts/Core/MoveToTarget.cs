@@ -1,4 +1,6 @@
 using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody2D))]
 public class MoveToTarget : MonoBehaviour
 {
     [SerializeField]
@@ -40,5 +42,9 @@ public class MoveToTarget : MonoBehaviour
     private void ApplyRegularSpeed()
     {
         _actualSpeed = _regularSpeed;
+    }
+
+    public void SetTarget(Transform targetGameobj) {
+        _target = targetGameobj;
     }
 }
