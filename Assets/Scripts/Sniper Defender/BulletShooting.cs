@@ -30,6 +30,7 @@ namespace Sniper_Defender{
             return direction;
         }
         
+        //todo: Cooldown ao atirar
         //todo: Rotacionar a bala em si
         //todo: Alinhar o target com a bala, por exemplo, se atirar para trás, o target deve ir para trás tbm
         //todo: Quanto mais longe o mouse, mais rápido fica, e quanto mais perto, mais lento, e se próximo, a bala muda de direção e fica lentíssima

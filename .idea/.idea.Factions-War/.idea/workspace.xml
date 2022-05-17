@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/LifeScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/LifeScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sniper Defender/SniperDefender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sniper Defender/SniperDefenderKeyListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sniper Defender/SniperDefender.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sniper Defender/SniperDefenderKeyListener.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sniper Defender/BulletShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sniper Defender/BulletShooting.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +31,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1304">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="1304" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -72,6 +66,7 @@
       <workItem from="1651519680940" duration="595000" />
       <workItem from="1652811737214" duration="1238000" />
       <workItem from="1652813004131" duration="4582000" />
+      <workItem from="1652817668207" duration="20000" />
     </task>
     <servers />
   </component>
