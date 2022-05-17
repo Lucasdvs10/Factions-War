@@ -15,6 +15,7 @@ public class LifeScript : MonoBehaviour
         _troopLife -= damage;
         if (_troopLife <= 0)
         {
+            Destroy(transform.gameObject);
             OnZeroLife?.Invoke();
         }
         return _troopLife;
