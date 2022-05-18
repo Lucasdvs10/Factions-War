@@ -7,13 +7,10 @@ public class TargetRadar : MonoBehaviour
     //Tag of objects to be targeted.
     [SerializeField] string targetTag = "Target";
 
-    List<Collider2D> possibleTargets = new List<Collider2D>();
-    GameObject currentTarget = null;
+    List<Collider2D> possibleTargetsList = new List<Collider2D>();
+    private GameObject _currentTarget = null;
 
-    public GameObject Get_currentTarget() => currentTarget;
-
-    public event Action<GameObject> OnGetCurrentTargetEvent;
-    public event Action CurrentTargetChangedEvent;
+    public event Action<GameObject> CurrentTargetChangedEvent;
     
 
     //Adds to the possibleTargets list all Collider2D that enters the trigger from this.gameObject if their tag is the same as targetTag.
@@ -21,57 +18,59 @@ public class TargetRadar : MonoBehaviour
     {
         if (other.CompareTag(targetTag))
         {
-            if (!possibleTargets.Contains(other))
+            if (!possibleTargetsList.Contains(other))
             {
-                possibleTargets.Add(other);
+                possibleTargetsList.Add(other);
             }
-            currentTarget = FindClosestTarget();
+            UpdateClosestTarget();
         }
     }
 
     //Removes from the possibleTargets list all Collider2D that exits the trigger from this.gameObject.
     void OnTriggerExit2D(Collider2D other)
     {
-        if (possibleTargets.Contains(other))
+        if (possibleTargetsList.Contains(other))
         {
-            possibleTargets.Remove(other);
-            currentTarget = FindClosestTarget();
+            possibleTargetsList.Remove(other);
+            UpdateClosestTarget();
         }
     }
 
     //Searches for closest target every frame.
     void Update() {
-        if (currentTarget != null) {
-                Debug.DrawLine(transform.position, currentTarget.transform.position);
+        if (_currentTarget != null) {
+                Debug.DrawLine(transform.position, _currentTarget.transform.position);
         }
-        
-        
+    }
+    //Returns the gameObject with the closest position to this.gameObject from the possibleTargets list.
+    
+    private void UpdateClosestTarget() {
+        var oldTarget = _currentTarget;
+        _currentTarget = FindClosestTarget();
+
+        if (oldTarget != _currentTarget) {
+            CurrentTargetChangedEvent?.Invoke(_currentTarget);
+        }
     }
 
-    //Returns the gameObject with the closest position to this.gameObject from the possibleTargets list.
-    GameObject FindClosestTarget()
-    {
-        float distanceToClosestTarget = Mathf.Infinity;
-        Vector3 thisPosition = this.transform.position;
-        GameObject closestTarget = null;
 
-        foreach (Collider2D target in possibleTargets)
-        {
-            Vector3 positionDifference = target.transform.position - thisPosition;
-            float distanceToCurrentTarget = positionDifference.sqrMagnitude;
-            if (distanceToCurrentTarget < distanceToClosestTarget) {
-                distanceToClosestTarget = distanceToCurrentTarget;
-                closestTarget = target.gameObject;
-                Debug.Log("Exchanged targets");
-                
-                CurrentTargetChangedEvent?.Invoke();
+    private GameObject FindClosestTarget() {
+        if (possibleTargetsList.Count <= 0) return null;
+        
+        
+        var closestTargetDistance = Mathf.Infinity;
+        var closestTargetGameobj = gameObject;
 
+        foreach (var target in possibleTargetsList) {
+            var currentDistanceTarget = Vector3.Distance(target.transform.position, transform.position);
+
+            if (currentDistanceTarget < closestTargetDistance) {
+                closestTargetDistance = currentDistanceTarget;
+                closestTargetGameobj = target.gameObject;
             }
         }
-        
-        if(!(closestTarget is null)) {
-            OnGetCurrentTargetEvent?.Invoke(closestTarget);
-        }
-        return closestTarget;
+
+        return closestTargetGameobj;
+
     }
 }

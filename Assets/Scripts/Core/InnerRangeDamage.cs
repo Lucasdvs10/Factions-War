@@ -2,12 +2,13 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(TargetRadar))]
 public class InnerRangeDamage : MonoBehaviour
 {
-    private TargetRadar _currentTarget;
+    private TargetRadar _targetRadar;
     private GameObject _whoToDamage;
     private LifeScript _lifeScriptFromTarget;
-    private bool _canDamageloop = true;
+    private bool _canDamage = true;
     
     
     [SerializeField] private float _damage;
@@ -15,39 +16,44 @@ public class InnerRangeDamage : MonoBehaviour
     
     
     private void Awake() {
-        _currentTarget = GetComponent<TargetRadar>();
-        
+        _targetRadar = GetComponent<TargetRadar>();
     }
-
     private void OnEnable() {
-        _currentTarget.OnGetCurrentTargetEvent += StartApplyDamageCoroutine;
-        _currentTarget.CurrentTargetChangedEvent += StopApplyDamageCoroutine;
+        _targetRadar.CurrentTargetChangedEvent += UpdateCanDamageBool;
+        _targetRadar.CurrentTargetChangedEvent += StartApplyDamageCoroutine;
     }
 
     private void OnDisable() {
-        _currentTarget.OnGetCurrentTargetEvent -= StartApplyDamageCoroutine;
-        _currentTarget.CurrentTargetChangedEvent -= StopApplyDamageCoroutine;
+        _targetRadar.CurrentTargetChangedEvent -= UpdateCanDamageBool;
+        _targetRadar.CurrentTargetChangedEvent -= StartApplyDamageCoroutine;
     }
-
-    private void StopApplyDamageCoroutine() {
-        _canDamageloop = false;
-        StopCoroutine(ApplyDamageLoopCoroutine(_damageDelayInSeconds, null));
-    }
-
+    
     private void StartApplyDamageCoroutine(GameObject targetGame) {
-        _canDamageloop = true;
         StartCoroutine(ApplyDamageLoopCoroutine(_damageDelayInSeconds, targetGame));
     }
     
-    //todo: O erro está aqui! Esse loop nunca para de tocar
     private IEnumerator ApplyDamageLoopCoroutine(float delayInSeconds, GameObject targetGameobj) {
-        while (true) {
-            if(!_canDamageloop) {
-                break;
+        var counter = 0f;
+        while (_canDamage) {
+           
+            counter += Time.deltaTime;
+
+            if(counter >= delayInSeconds) {
+                counter = 0f;
+                ApplyDamageToTarget(targetGameobj);
             }
-            ApplyDamageToTarget(targetGameobj);
-         yield return new WaitForSeconds(delayInSeconds);
+            yield return null;
         }
+    }
+
+    private void UpdateCanDamageBool(GameObject targetGameobj) {
+        if (targetGameobj is null) {
+            _canDamage = false;
+            return;
+        }
+
+        _canDamage = true;
+
     }
     
 
