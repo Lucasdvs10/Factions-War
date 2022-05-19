@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 760115302}
   - component: {fileID: 760115301}
   - component: {fileID: 760115298}
+  - component: {fileID: 760115303}
   m_Layer: 0
   m_Name: Defender Sniper
   m_TagString: Defenders
@@ -311,8 +312,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760115297}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.72, y: 0.31, z: 0}
-  m_LocalScale: {x: 0.5965, y: 0.5965, z: 0.5965}
+  m_LocalPosition: {x: -4.72, y: -0.59, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.5965}
   m_Children:
   - {fileID: 1592125038}
   m_Father: {fileID: 0}
@@ -352,6 +353,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _troopLife: 0
+--- !u!114 &760115303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760115297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04dd5998d74243daa62e0771111fdbea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &904463426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -701,7 +714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592125037}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: -0.3, z: 0}
   m_LocalScale: {x: 1.676446, y: 1.676446, z: 1.676446}
   m_Children: []
   m_Father: {fileID: 760115300}
@@ -720,6 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 2854758799559981011, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}
+  _shotCooldown: 0.5
 --- !u!114 &1592125040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,15 +856,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2854758799559981013, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2854758799559981013, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2854758799559981013, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.00019052325
       objectReference: {fileID: 0}
     - target: {fileID: 2854758799559981013, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -862,7 +876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2854758799559981013, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -0.022
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}

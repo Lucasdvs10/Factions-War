@@ -32,9 +32,6 @@ namespace Sniper_Defender{
             return direction;
         }
         
-        //todo: Quanto mais longe o mouse, mais rápido fica, e quanto mais perto, mais lento, e se próximo, a bala muda de direção e fica lentíssima
-
-
         public void ShotWhenCoolDownIsOver(Vector3 aux) {
             if (_canShot) {
                 InstantiateBullet();
@@ -57,7 +54,7 @@ namespace Sniper_Defender{
             var gameobj = Instantiate(BulletPrefab, transform.position, quaternion.Euler(Vector3.forward * rotation));
             
             
-            gameobj.GetComponent<Bullet>().SetSpeedVector(direction);
+            gameobj.GetComponent<Bullet>().SetSpeedVector(new Vector3(direction.x, direction.y, 0f).normalized);
         }
         
         private void GetMousePosition(Vector3 newMousePosition) {
