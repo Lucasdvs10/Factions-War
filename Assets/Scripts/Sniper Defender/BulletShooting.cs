@@ -1,13 +1,16 @@
-﻿using Unity.Mathematics;
+﻿using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Sniper_Defender{
     [RequireComponent(typeof(SniperDefenderKeyListener))]
     public class BulletShooting : MonoBehaviour{
+        [SerializeField] private GameObject BulletPrefab; 
+        [SerializeField] private float _shotCooldown;
+
         private SniperDefenderKeyListener _keyListener;
         private Vector3 _currentMousePosition;
-        [SerializeField] private GameObject BulletPrefab;
-        
+        private bool _canShot = true;
 
         private void Awake() {
             _keyListener = GetComponent<SniperDefenderKeyListener>();
@@ -15,12 +18,12 @@ namespace Sniper_Defender{
 
         private void OnEnable() {
             _keyListener.OnPressKeyEvent += GetMousePosition;
-            _keyListener.OnPressKeyEvent += InstantiateBullet;
+            _keyListener.OnPressKeyEvent += ShotWhenCoolDownIsOver;
         }
 
         private void OnDisable() {
             _keyListener.OnPressKeyEvent -= GetMousePosition;
-            _keyListener.OnPressKeyEvent -= InstantiateBullet;
+            _keyListener.OnPressKeyEvent -= ShotWhenCoolDownIsOver;
         }
 
 
@@ -34,7 +37,22 @@ namespace Sniper_Defender{
         //todo: Rotacionar a bala em si
         //todo: Alinhar o target com a bala, por exemplo, se atirar para trás, o target deve ir para trás tbm
         //todo: Quanto mais longe o mouse, mais rápido fica, e quanto mais perto, mais lento, e se próximo, a bala muda de direção e fica lentíssima
-        public void InstantiateBullet(Vector3 asd) {
+
+
+        private void ShotWhenCoolDownIsOver(Vector3 aux) {
+            if (_canShot) {
+                InstantiateBullet();
+                StartCoroutine(CheckIfCanShot());
+            }
+        }
+
+        private IEnumerator CheckIfCanShot() {
+            _canShot = false;
+            yield return new WaitForSeconds(_shotCooldown);
+            _canShot = true;
+        }
+        
+        public void InstantiateBullet() {
             var direction = GetBulletDirection();
 
             var rotation = Vector3.Angle(direction, Vector3.right);            
