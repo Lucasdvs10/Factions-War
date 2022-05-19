@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sniper Defender/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sniper Defender/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sniper Defender/BulletShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sniper Defender/BulletShooting.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -68,7 +69,7 @@
       <workItem from="1652811737214" duration="1238000" />
       <workItem from="1652813004131" duration="4582000" />
       <workItem from="1652817668207" duration="20000" />
-      <workItem from="1652969199439" duration="473000" />
+      <workItem from="1652969199439" duration="2017000" />
     </task>
     <servers />
   </component>

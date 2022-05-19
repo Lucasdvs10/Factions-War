@@ -28,25 +28,22 @@ namespace Sniper_Defender{
 
 
         private Vector3 GetBulletDirection() {
-            var direction = (_currentMousePosition - transform.position);
-            direction = new Vector3(direction.x, direction.y, 0).normalized;
+            var direction = (_currentMousePosition - transform.position).normalized;
             return direction;
         }
         
-        //todo: Cooldown ao atirar
-        //todo: Rotacionar a bala em si
         //todo: Alinhar o target com a bala, por exemplo, se atirar para trás, o target deve ir para trás tbm
         //todo: Quanto mais longe o mouse, mais rápido fica, e quanto mais perto, mais lento, e se próximo, a bala muda de direção e fica lentíssima
 
 
-        private void ShotWhenCoolDownIsOver(Vector3 aux) {
+        public void ShotWhenCoolDownIsOver(Vector3 aux) {
             if (_canShot) {
                 InstantiateBullet();
-                StartCoroutine(CheckIfCanShot());
+                StartCoroutine(ManageShotCooldown());
             }
         }
 
-        private IEnumerator CheckIfCanShot() {
+        private IEnumerator ManageShotCooldown() {
             _canShot = false;
             yield return new WaitForSeconds(_shotCooldown);
             _canShot = true;
@@ -55,9 +52,11 @@ namespace Sniper_Defender{
         public void InstantiateBullet() {
             var direction = GetBulletDirection();
 
-            var rotation = Vector3.Angle(direction, Vector3.right);            
+            var rotation = Mathf.Atan2(direction.y, direction.x);
+
             
-            var gameobj = Instantiate(BulletPrefab, transform.position, quaternion.Euler(Vector3.forward*rotation));
+            var gameobj = Instantiate(BulletPrefab, transform.position, quaternion.Euler(Vector3.forward * rotation));
+            
             
             gameobj.GetComponent<Bullet>().SetSpeedVector(direction);
         }
