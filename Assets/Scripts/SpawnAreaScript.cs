@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 
 public class SpawnAreaScript : MonoBehaviour {
     [SerializeField] private GameObject character;
@@ -33,9 +33,9 @@ public class SpawnAreaScript : MonoBehaviour {
         }
     }
     
-    private void OnDrawGizmos() {
-        var collider = GetComponent<BoxCollider2D>();
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(transform.position + new Vector3(collider.offset.x, collider.offset.y, 0), collider.bounds.extents * 2);
-    }
+    // private void OnDrawGizmos() {
+    //     var collider = GetComponent<BoxCollider2D>();
+    //     Gizmos.color = Color.yellow;
+    //     Gizmos.DrawWireCube(transform.position + new Vector3(collider.offset.x, collider.offset.y, 0), collider.bounds.extents * 2);
+    // }
 }

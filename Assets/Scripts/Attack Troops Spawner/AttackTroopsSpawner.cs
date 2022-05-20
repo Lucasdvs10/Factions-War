@@ -2,20 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackTroopsSpawner : MonoBehaviour
-{
+public class AttackTroopsSpawner : MonoBehaviour{
+    [SerializeField] private Transform _towerTransform;
+    
     private Queue<GameObject> _troopsToBeSpawned;
     public GameObject[] initializingVectorForTroopQueue;
     void Start()
     {
         this._troopsToBeSpawned = new Queue<GameObject>(initializingVectorForTroopQueue);
         SpawnTroopsInSeconds(3.0f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void SpawnTroopsInSeconds(float SecondsToSpawnTroop)
@@ -32,7 +27,9 @@ public class AttackTroopsSpawner : MonoBehaviour
         while (ExistsTroopsInQueueToBeSpawned())
         {
             yield return new WaitForSeconds(SecondsToSpawnTroop);
-            Instantiate(_troopsToBeSpawned.Dequeue());
+            var gameobj = Instantiate(_troopsToBeSpawned.Dequeue(), transform.position, Quaternion.identity);
+            
+            gameobj.GetComponent<MoveToTarget>().SetTarget(_towerTransform);
         }
     }
 

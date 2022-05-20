@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8447841571735780872}
   - component: {fileID: 8447841571735780875}
-  - component: {fileID: 8447841571735780873}
+  - component: {fileID: 7257633674772831046}
   m_Layer: 0
   m_Name: Spawn Area
   m_TagString: Untagged
@@ -46,8 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   offSet: 12
---- !u!61 &8447841571735780873
-BoxCollider2D:
+  currentMoney: {fileID: 0}
+--- !u!60 &7257633674772831046
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -56,7 +57,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -69,6 +70,10 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.034355, y: 5.5714264}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 1}
+      - {x: -0.95105654, y: 0.30901697}
+      - {x: -0.5877852, y: -0.80901706}
+      - {x: 0.58778536, y: -0.80901694}
+      - {x: 0.9510565, y: 0.30901712}
