@@ -1,23 +1,69 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(TargetRadar))]
 public class InnerRangeDamage : MonoBehaviour
 {
-    private TargetRadar _currentTarget;
+    private TargetRadar _targetRadar;
     private GameObject _whoToDamage;
-    private LifeScript _applyDamage;
+    private LifeScript _lifeScriptFromTarget;
+    private bool _canDamage = true;
+    
+    
     [SerializeField] private float _damage;
-    private void Start()
-    {
-        _currentTarget = GetComponent<TargetRadar>();
+    [SerializeField] private float _damageDelayInSeconds;
+    
+    
+    private void Awake() {
+        _targetRadar = GetComponent<TargetRadar>();
     }
-    private void Update()
-    {
-        if (_currentTarget.Get_currentTarget() != null)
-        {
-            _whoToDamage = _currentTarget.Get_currentTarget();
-            _applyDamage = _whoToDamage.GetComponent<LifeScript>();
-            _applyDamage.ApplyDamage(_damage);
-            
+    private void OnEnable() {
+        _targetRadar.CurrentTargetChangedEvent += UpdateCanDamageBool;
+        _targetRadar.CurrentTargetChangedEvent += StartApplyDamageCoroutine;
+    }
+
+    private void OnDisable() {
+        _targetRadar.CurrentTargetChangedEvent -= UpdateCanDamageBool;
+        _targetRadar.CurrentTargetChangedEvent -= StartApplyDamageCoroutine;
+    }
+    
+    private void StartApplyDamageCoroutine(GameObject targetGame) {
+        StartCoroutine(ApplyDamageLoopCoroutine(_damageDelayInSeconds, targetGame));
+    }
+    
+    private IEnumerator ApplyDamageLoopCoroutine(float delayInSeconds, GameObject targetGameobj) {
+        var counter = 0f;
+        while (_canDamage) {
+           
+            counter += Time.deltaTime;
+
+            if(counter >= delayInSeconds) {
+                counter = 0f;
+                ApplyDamageToTarget(targetGameobj);
+            }
+            yield return null;
         }
+    }
+
+    private void UpdateCanDamageBool(GameObject targetGameobj) {
+        if (targetGameobj is null) {
+            _canDamage = false;
+            return;
+        }
+
+        _canDamage = true;
+
+    }
+    
+
+    private void ApplyDamageToTarget(GameObject targetGameobj) {
+        SetWhoToDamageGameobj(targetGameobj);
+        _lifeScriptFromTarget = _whoToDamage.GetComponent<LifeScript>();
+        _lifeScriptFromTarget.ApplyDamage(_damage);
+    }
+
+    private void SetWhoToDamageGameobj(GameObject targetGameobj) {
+        _whoToDamage = targetGameobj;
     }
 }

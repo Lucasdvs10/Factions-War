@@ -22,6 +22,7 @@ public class MoveToTarget : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(_target is null) return;
         //Distance between Attacker and Target
         Vector3 distanceFromTarget = _target.position - transform.position;
         //Normalized gets direction with a given vector
