@@ -4,7 +4,7 @@ using UnityEngine;
 public class MoveToTarget : MonoBehaviour
 {
     [SerializeField]
-    private Transform _target;
+    private Transform _targetTransform;
     
     [SerializeField]
     private float _regularSpeed;
@@ -18,21 +18,26 @@ public class MoveToTarget : MonoBehaviour
     
     void Start()
     {
-        _rigidbody = this.GetComponent<Rigidbody2D>();
+        _rigidbody = GetComponent<Rigidbody2D>();
         ApplyRegularSpeed();
     }
 
     private void FixedUpdate()
     {
-        if(_target is null) return;
+        if(_targetTransform != null) {
+            ApplyVelocity();
+        }
+    }
+
+    private void ApplyVelocity() {
         //Distance between Attacker and Target
-        Vector3 distanceFromTarget = _target.position - transform.position;
+        Vector3 distanceFromTarget = _targetTransform.position - transform.position;
         //Normalized gets direction with a given vector
         Vector3 direction = distanceFromTarget.normalized;
         Vector3 velocity = direction * _actualSpeed;
-        
+
         //Changes position of Attacker through time
-        _rigidbody.MovePosition(transform.position + (velocity * Time.deltaTime));
+        _rigidbody.velocity = velocity;
     }
 
     private void ApplySpeedWhenShooting()
@@ -46,6 +51,6 @@ public class MoveToTarget : MonoBehaviour
     }
 
     public void SetTarget(Transform targetGameobj) {
-        _target = targetGameobj;
+        _targetTransform = targetGameobj;
     }
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8459303984202357187
+--- !u!1001 &3794386994104866679
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,29 +11,41 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2387762329070207996, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: targetTag
+      value: Attackers
+      objectReference: {fileID: 0}
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Name
-      value: AttackTroop
+      value: Base Defender troop
       objectReference: {fileID: 0}
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_TagString
-      value: Attackers
+      value: Defenders
       objectReference: {fileID: 0}
     - target: {fileID: 3501017765987097345, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3501017765987097345, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_TagString
-      value: Attackers
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3787435799859370251, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961627290489240821, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: _damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961627290489240821, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: _damageDelayInSeconds
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8296844184890685808, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _troopLife
@@ -41,11 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8778913355829337077, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8778913355829337077, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_TagString
-      value: Attackers
+      value: Defenders
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_RootOrder
@@ -53,11 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.47
+      value: -0.80907536
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.77
+      value: -3.032605
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.z

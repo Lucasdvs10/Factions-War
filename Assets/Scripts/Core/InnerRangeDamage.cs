@@ -60,7 +60,7 @@ public class InnerRangeDamage : MonoBehaviour
     private void ApplyDamageToTarget(GameObject targetGameobj) {
         SetWhoToDamageGameobj(targetGameobj);
         _lifeScriptFromTarget = _whoToDamage.GetComponent<LifeScript>();
-        _lifeScriptFromTarget.ApplyDamage(_damage);
+        _lifeScriptFromTarget?.ApplyDamage(_damage);
     }
 
     private void SetWhoToDamageGameobj(GameObject targetGameobj) {
