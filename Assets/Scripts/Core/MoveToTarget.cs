@@ -22,6 +22,21 @@ public class MoveToTarget : MonoBehaviour
         ApplyRegularSpeed();
     }
 
+    private void OnEnable() {
+        var targetRadar = GetComponentInChildren<TargetRadar>();
+
+        targetRadar.CurrentTargetChangedEvent += ApplySpeedWhenShooting;
+
+    }
+    
+    private void OnDisable() {
+        var targetRadar = GetComponentInChildren<TargetRadar>();
+
+        targetRadar.CurrentTargetChangedEvent -= ApplySpeedWhenShooting;
+
+    }
+
+
     private void FixedUpdate()
     {
         if(_targetTransform != null) {
@@ -40,8 +55,9 @@ public class MoveToTarget : MonoBehaviour
         _rigidbody.velocity = velocity;
     }
 
-    private void ApplySpeedWhenShooting()
+    private void ApplySpeedWhenShooting(GameObject targetShot)
     {
+        if(targetShot == null) return;
         _actualSpeed = _speedWhenShooting;
     }
 
