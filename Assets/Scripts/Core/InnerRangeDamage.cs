@@ -9,8 +9,8 @@ public class InnerRangeDamage : MonoBehaviour
     private GameObject _whoToDamage;
     private LifeScript _lifeScriptFromTarget;
     private bool _canDamage = true;
-    
-    
+    public event Action OnDamageBeingApplied;
+    public event Action OnDamageNotBeingApplied;
     [SerializeField] private float _damage;
     [SerializeField] private float _damageDelayInSeconds;
     
@@ -41,6 +41,7 @@ public class InnerRangeDamage : MonoBehaviour
             if(counter >= delayInSeconds) {
                 counter = 0f;
                 ApplyDamageToTarget(targetGameobj);
+                OnDamageBeingApplied?.Invoke();
             }
             yield return null;
         }
@@ -49,6 +50,7 @@ public class InnerRangeDamage : MonoBehaviour
     private void UpdateCanDamageBool(GameObject targetGameobj) {
         if (targetGameobj is null) {
             _canDamage = false;
+            OnDamageNotBeingApplied?.Invoke();
             return;
         }
 
