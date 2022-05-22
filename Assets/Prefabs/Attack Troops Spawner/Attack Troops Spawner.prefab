@@ -43,7 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f38f408bbe40564ebcf0063f15b28c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _towerTransform: {fileID: 0}
   initializingVectorForTroopQueue:
-  - {fileID: 3885552614170146329, guid: 8314b66ea23a53848803124a86ccb04a, type: 3}
-  - {fileID: 8370134375586665397, guid: b999cde9f7ce95943ad6107a00c3cb04, type: 3}
-  - {fileID: 497591975822643879, guid: ff8171cc395047642ba447ec5cb0c10b, type: 3}
+  - {fileID: 5999836981359843110, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
+  - {fileID: 5999836981359843110, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
+  - {fileID: 5999836981359843110, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
