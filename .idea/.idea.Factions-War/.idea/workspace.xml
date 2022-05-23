@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/InnerRangeDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InnerRangeDamage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/MoveToTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/MoveToTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/TargetRadar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/TargetRadar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/SniperRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/SniperRotate.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +63,7 @@
       <workItem from="1652144834411" duration="4036000" />
       <workItem from="1652911237519" duration="4863000" />
       <workItem from="1652917807143" duration="62000" />
+      <workItem from="1653326891748" duration="896000" />
     </task>
     <servers />
   </component>
