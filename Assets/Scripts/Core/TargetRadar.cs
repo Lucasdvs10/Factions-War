@@ -11,8 +11,8 @@ public class TargetRadar : MonoBehaviour
     private GameObject _currentTarget = null;
 
     public event Action<GameObject> CurrentTargetChangedEvent;
-    
 
+    public GameObject GetCurrentTarget => _currentTarget; 
     //Adds to the possibleTargets list all Collider2D that enters the trigger from this.gameObject if their tag is the same as targetTag.
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -73,4 +73,6 @@ public class TargetRadar : MonoBehaviour
         return closestTargetGameobj;
 
     }
+
+
 }
