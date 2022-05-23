@@ -4,7 +4,7 @@
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/AttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/AttackManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/QueueGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/QueueGroup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Teste.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teste.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +75,8 @@
       <workItem from="1652727045006" duration="981000" />
       <workItem from="1652728057724" duration="3521000" />
       <workItem from="1652731626040" duration="961000" />
+      <workItem from="1653326382012" duration="49000" />
+      <workItem from="1653326452689" duration="236000" />
     </task>
     <servers />
   </component>

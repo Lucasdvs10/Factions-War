@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 namespace AttackManager{
@@ -18,7 +19,7 @@ namespace AttackManager{
         }
 
         private void Start() {
-            
+            //
             // var fila = new List<GameObject>() { };
             //
             // fila.Add(transform.gameObject);
@@ -27,11 +28,12 @@ namespace AttackManager{
             //
             // SendAttackToDB(grupo);
 
-
-            var lista = JsonUtility.FromJson<QueueGroup>(path);
+            var json = File.ReadAllText(path);
+            
+            var lista = JsonUtility.FromJson<QueueGroup>(json);
             
             
-            print(lista.NorthList);
+            print(lista.NorthList[0]);
 
 
         }
