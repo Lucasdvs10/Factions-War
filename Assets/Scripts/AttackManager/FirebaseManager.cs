@@ -4,7 +4,7 @@
              
          }
          
-         public string GetJson() {
+         public string GetJsonString() {
              return "das";
          }
         
