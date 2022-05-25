@@ -4,8 +4,8 @@
              
          }
          
-         public string GetJson(string path){
-             return "asd";
+         public string GetJson() {
+             return "das";
          }
         
         
