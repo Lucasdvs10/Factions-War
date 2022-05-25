@@ -1,6 +1,6 @@
 ﻿namespace AttackManager{
     public interface IBancoDeDados{
-        public void SendJson(string json);
+        public void SendJson(string jsonString);
         public string GetJsonString();
     }
 }

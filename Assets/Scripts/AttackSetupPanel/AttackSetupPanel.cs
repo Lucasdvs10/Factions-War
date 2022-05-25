@@ -4,18 +4,18 @@ using UnityEngine;
 public class AttackSetupPanel : MonoBehaviour
 {   
     public GameObject queuePanel; 
-    private Queue<GameObject> troops;
+    private List<GameObject> troopsGameObjList;
 
      void Start()
     {
-        troops = new Queue<GameObject>();
+        troopsGameObjList = new List<GameObject>();
     }
 
     public void AddTroopToQueue(GameObject troop){
-        troops.Enqueue(troop);
+        troopsGameObjList.Add(troop);
         GameObject troopImage = Instantiate(troop);
         troopImage.transform.SetParent(queuePanel.transform, false);
     }
 
-    public GameObject QueuePanel => queuePanel;
+    public List<GameObject> ListPanel => troopsGameObjList;
 }

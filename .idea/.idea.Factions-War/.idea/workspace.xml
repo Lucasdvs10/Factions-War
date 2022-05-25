@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/Manager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attack Troops Spawner/AttackTroopsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attack Troops Spawner/AttackTroopsSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/AttackManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/AttackManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/Manager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Attack Troops Spawner/Attack Troops Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Attack Troops Spawner/Attack Troops Spawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Buttons/T Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Buttons/T Button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AttackSetupPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AttackSetupPanel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/FirebaseManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/FirebaseManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/IBancoDeDados.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/IBancoDeDados.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/SpawnerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/SpawnerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/AttackSetupPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/AttackSetupPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Teste.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teste.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +43,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -82,7 +87,7 @@
       <workItem from="1653326382012" duration="49000" />
       <workItem from="1653326452689" duration="236000" />
       <workItem from="1653438915938" duration="1571000" />
-      <workItem from="1653512765609" duration="2559000" />
+      <workItem from="1653512765609" duration="7138000" />
     </task>
     <servers />
   </component>

@@ -11,7 +11,7 @@ namespace AttackManager{
         }
 
         protected virtual void SendJsonStringToDB() {
-            var jsonString = JsonUtility.ToJson(_troopListGroup);
+            var jsonString = JsonUtility.ToJson(_troopListGroup, true);
             _db.SendJson(jsonString);
         }
         
