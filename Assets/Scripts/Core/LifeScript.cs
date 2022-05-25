@@ -9,7 +9,6 @@ public class LifeScript : MonoBehaviour
     public static event Action OnZeroLife;
     public float Get_troopLife() => _troopLife;
     
-    
     public float ApplyDamage(float damage) {
         OnDamageFired?.Invoke(damage);
         _troopLife -= damage;

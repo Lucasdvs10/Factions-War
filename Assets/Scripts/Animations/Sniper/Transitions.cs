@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SniperAnimatorTransition : MonoBehaviour
+public class Transitions : MonoBehaviour
 {
     private Transform _range;
     private InnerRangeDamage _innerRangeDamage; 

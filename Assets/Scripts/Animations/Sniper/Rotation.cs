@@ -2,7 +2,7 @@ using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class SniperRotate : MonoBehaviour
+public class Rotation : MonoBehaviour
 {   
     
     private TargetRadar _currentTargetChanged;
@@ -20,8 +20,8 @@ public class SniperRotate : MonoBehaviour
         {
             _currentTargetTransform = _currentTarget.GetComponent<Transform>();
             var vectorDirection = (_currentTargetTransform.position - transform.position).normalized;
-            var rotation = Mathf.Atan2(vectorDirection.y, vectorDirection.x);
-            transform.rotation = quaternion.Euler(Vector3.forward * rotation);
+            var rotation = Mathf.Atan2(vectorDirection.y, vectorDirection.x) * Mathf.Rad2Deg - 90f;
+            transform.eulerAngles = Vector3.forward * rotation;
         }
         else {
             transform.rotation = Quaternion.identity;
