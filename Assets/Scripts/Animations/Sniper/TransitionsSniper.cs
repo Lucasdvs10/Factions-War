@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Transitions : MonoBehaviour
+public class TransitionsSniper : MonoBehaviour
 {
     private Transform _range;
     private InnerRangeDamage _innerRangeDamage; 
@@ -18,6 +18,7 @@ public class Transitions : MonoBehaviour
         _innerRangeDamage.OnDamageNotBeingApplied += TransitionToWalking;
 
     }
+    
 
 
     void TransitionToShooting()

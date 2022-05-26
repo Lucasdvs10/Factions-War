@@ -2,7 +2,7 @@ using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class Rotation : MonoBehaviour
+public class RotationSniper : MonoBehaviour
 {   
     
     private TargetRadar _currentTargetChanged;

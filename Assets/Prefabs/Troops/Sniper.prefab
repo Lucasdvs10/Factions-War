@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3787435799859370251}
   - component: {fileID: 8296844184890685808}
   - component: {fileID: 1551632585078105476}
-  - component: {fileID: 305050018682062290}
-  - component: {fileID: 1232429816054313078}
+  - component: {fileID: 4780434366091028572}
+  - component: {fileID: 6679453901489273879}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Player
@@ -159,7 +159,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &305050018682062290
+--- !u!114 &4780434366091028572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,10 +168,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2749113139266653925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8038d7c20ebe7b445bfe5c08a1d0faf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5170291e69bea2840ace2461143dda6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1232429816054313078
+--- !u!114 &6679453901489273879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2749113139266653925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 812345e501bb32f41bf0d63d9bd90f73, type: 3}
+  m_Script: {fileID: 11500000, guid: d51c5cc86954cd341a4004d235092bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3501017765987097345
