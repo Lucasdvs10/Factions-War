@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TransitionsTank : MonoBehaviour
@@ -15,17 +13,16 @@ public class TransitionsTank : MonoBehaviour
 
     void Update()
     {
-        _isTargetOf = _getAllThoseWhoAim();
+        _isTargetOf = GetAllThoseWhoAim();
         foreach (GameObject whoAim in _isTargetOf)
         {
             TargetRadar theTarget = whoAim.GetComponentInChildren<TargetRadar>();
-            if (theTarget.GetCurrentTarget() != null && theTarget.GetCurrentTarget() == gameObject)
+            if (theTarget.GetCurrentTarget() == gameObject)
             {
                 _isTarget++;
             }
         }
         _isTarget = _isTarget / 2; // Nao entendi o porque de ter que dividir por dois
-        Debug.Log(_isTarget);
         if (_isTarget == 0)
         {
             _animator.SetBool("isTarget", false);
@@ -44,17 +41,17 @@ public class TransitionsTank : MonoBehaviour
         }
     }
 
-    GameObject[] _getAllThoseWhoAim()
+    GameObject[] GetAllThoseWhoAim()
     {
-        GameObject[] _arrayOfThoseWhoAim;
+        GameObject[] arrayOfThoseWhoAim;
         if (gameObject.CompareTag("Attackers"))
         {
-            _arrayOfThoseWhoAim = GameObject.FindGameObjectsWithTag("Defenders");
+            arrayOfThoseWhoAim = GameObject.FindGameObjectsWithTag("Defenders");
         }
         else
         {
-            _arrayOfThoseWhoAim = GameObject.FindGameObjectsWithTag("Attackers");
+            arrayOfThoseWhoAim = GameObject.FindGameObjectsWithTag("Attackers");
         }
-        return _arrayOfThoseWhoAim;
+        return arrayOfThoseWhoAim;
     }
 }
