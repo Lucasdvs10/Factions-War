@@ -226,4 +226,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSetupPanel: {fileID: 0}
-  troop: {fileID: 4113336615275436389, guid: bfeca852e68a54b4894ae4f73eb576fc, type: 3}
+  troop: {fileID: 5106854441037182092, guid: e1d81b5f76d60ff478b8a76877c67a3f, type: 3}

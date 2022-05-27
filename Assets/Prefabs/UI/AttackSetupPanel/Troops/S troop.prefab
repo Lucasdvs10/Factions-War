@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 6451377879507800042}
   - component: {fileID: 3316098187149143633}
   - component: {fileID: 8347469630296101051}
+  - component: {fileID: 2919491172115191620}
   m_Layer: 5
   m_Name: S troop
   m_TagString: Untagged
@@ -155,3 +156,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2919491172115191620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883005090879107265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d3722c14ec454a930d207350d1b769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _troopPrefab: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
