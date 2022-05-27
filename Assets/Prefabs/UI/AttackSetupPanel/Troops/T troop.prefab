@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d3722c14ec454a930d207350d1b769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _troopPrefab: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+  _troopPrefab: {fileID: 5999836981359843110, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
 --- !u!1 &5287854036063851859
 GameObject:
   m_ObjectHideFlags: 0

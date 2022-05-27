@@ -32,7 +32,7 @@ public class AttackTroopsSpawner : MonoBehaviour{
             
             
             if(_towerTransform != null) {
-                gameobj.GetComponent<MoveToTarget>().SetTarget(_towerTransform);
+                gameobj.GetComponent<MoveToTarget>()?.SetTarget(_towerTransform);
             }
             
         }
