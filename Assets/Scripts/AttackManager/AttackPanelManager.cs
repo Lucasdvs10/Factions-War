@@ -2,10 +2,10 @@
 
 namespace AttackManager{
     public class AttackPanelManager : Manager{
-        [SerializeField] private AttackSetupPanel _attackSetupPanelNorth;
-        [SerializeField] private AttackSetupPanel _attackSetupPanelSouth;
-        [SerializeField] private AttackSetupPanel _attackSetupPanelEast;
-        [SerializeField] private AttackSetupPanel _attackSetupPanelWest;
+        [SerializeField] private AttackPanelHandler attackPanelHandlerNorth;
+        [SerializeField] private AttackPanelHandler attackPanelHandlerSouth;
+        [SerializeField] private AttackPanelHandler attackPanelHandlerEast;
+        [SerializeField] private AttackPanelHandler attackPanelHandlerWest;
 
 
         private void Awake() {
@@ -19,7 +19,7 @@ namespace AttackManager{
         }
 
         private void CreateTroopsList() { 
-            _troopListGroup = new TroopListGroup(_attackSetupPanelNorth.ListPanel,_attackSetupPanelSouth.ListPanel, _attackSetupPanelEast.ListPanel, _attackSetupPanelWest.ListPanel);
+            _troopListGroup = new TroopListGroup(attackPanelHandlerNorth.ListPanel,attackPanelHandlerSouth.ListPanel, attackPanelHandlerEast.ListPanel, attackPanelHandlerWest.ListPanel);
         }
         
     }

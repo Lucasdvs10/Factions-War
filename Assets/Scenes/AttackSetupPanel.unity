@@ -770,6 +770,22 @@ PrefabInstance:
       propertyPath: _attackSetupPanelSouth
       value: 
       objectReference: {fileID: 164641491}
+    - target: {fileID: 5057528402316403726, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+      propertyPath: attackPanelHandlerEast
+      value: 
+      objectReference: {fileID: 164641491}
+    - target: {fileID: 5057528402316403726, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+      propertyPath: attackPanelHandlerWest
+      value: 
+      objectReference: {fileID: 164641491}
+    - target: {fileID: 5057528402316403726, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+      propertyPath: attackPanelHandlerNorth
+      value: 
+      objectReference: {fileID: 164641491}
+    - target: {fileID: 5057528402316403726, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+      propertyPath: attackPanelHandlerSouth
+      value: 
+      objectReference: {fileID: 164641491}
     - target: {fileID: 5057528402316403727, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
       propertyPath: m_Name
       value: Panel Manager

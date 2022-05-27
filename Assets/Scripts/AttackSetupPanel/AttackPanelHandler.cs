@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using AttackSetupPanel;
 using UnityEngine;
 
-public class AttackSetupPanel : MonoBehaviour
+public class AttackPanelHandler : MonoBehaviour
 {   
     public GameObject queuePanel; 
     private List<GameObject> troopsGameObjList;
@@ -11,8 +12,10 @@ public class AttackSetupPanel : MonoBehaviour
         troopsGameObjList = new List<GameObject>();
     }
 
-    public void AddTroopToQueue(GameObject troop){
-        troopsGameObjList.Add(troop);
+    public void AddTroopToQueue(GameObject troop) {
+        var troopPrefab = troop.GetComponent<ObjectHandler>().GetTroopPrefab();
+        
+        troopsGameObjList.Add(troopPrefab);
         GameObject troopImage = Instantiate(troop);
         troopImage.transform.SetParent(queuePanel.transform, false);
     }

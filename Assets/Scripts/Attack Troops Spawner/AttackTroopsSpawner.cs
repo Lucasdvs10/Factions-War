@@ -11,13 +11,13 @@ public class AttackTroopsSpawner : MonoBehaviour
         StartCoroutine(SpawnTroopsInSecondsCorotine(SecondsToSpawnTroop));
     }
 
-    public void AddTroopInTheSpawnQueue(GameObject troop){
+    public void AddTroopInTheSpawnList(GameObject troop){
         _troopsToBeSpawned.Add(troop);
     }
 
     private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop)
     {
-        while (ExistsTroopsInQueueToBeSpawned())
+        while (ExistsTroopsInListToBeSpawned())
         {
             yield return new WaitForSeconds(SecondsToSpawnTroop);
             Instantiate(_troopsToBeSpawned[0]);
@@ -25,7 +25,7 @@ public class AttackTroopsSpawner : MonoBehaviour
         }
     }
 
-    private bool ExistsTroopsInQueueToBeSpawned()
+    private bool ExistsTroopsInListToBeSpawned()
     {
         return _troopsToBeSpawned.Count > 0;
     }
