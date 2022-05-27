@@ -1,118 +1,82 @@
 {
     "NorthList": [
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
+            "instanceID": 6122
         }
     ],
     "SouthList": [
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
+            "instanceID": 6122
         }
     ],
     "EastList": [
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
+            "instanceID": 6122
         }
     ],
     "WestList": [
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
+            "instanceID": 6122
         },
         {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
-        },
-        {
-            "instanceID": 17592
+            "instanceID": 6122
         }
     ]
 }

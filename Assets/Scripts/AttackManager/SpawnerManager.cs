@@ -30,10 +30,10 @@ namespace AttackManager{
         }
 
         private void InjectListsInSpawners() {
-            _attackTroopsSpawnerNorth.TroopsToBeSpawned = _troopListGroup.NorthList;
-            _attackTroopsSpawnerSouth.TroopsToBeSpawned = _troopListGroup.SouthList;
-            _attackTroopsSpawnerEast.TroopsToBeSpawned = _troopListGroup.EastList;
-            _attackTroopsSpawnerWest.TroopsToBeSpawned = _troopListGroup.WestList;
+            _attackTroopsSpawnerNorth.TroopsToBeSpawnedList = _troopListGroup.NorthList;
+            _attackTroopsSpawnerSouth.TroopsToBeSpawnedList = _troopListGroup.SouthList;
+            _attackTroopsSpawnerEast.TroopsToBeSpawnedList = _troopListGroup.EastList;
+            _attackTroopsSpawnerWest.TroopsToBeSpawnedList = _troopListGroup.WestList;
         }
     }
 }

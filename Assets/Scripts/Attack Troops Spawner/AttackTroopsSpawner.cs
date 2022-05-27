@@ -5,12 +5,10 @@ using UnityEngine;
 public class AttackTroopsSpawner : MonoBehaviour{
     [SerializeField] private Transform _towerTransform;
     
-    private Queue<GameObject> _troopsToBeSpawned;
-    public GameObject[] initializingVectorForTroopQueue;
-    void Start()
+    private List<GameObject> _troopsToBeSpawnedList;
+    void Awake()
     {
-        this._troopsToBeSpawned = new Queue<GameObject>(initializingVectorForTroopQueue);
-        SpawnTroopsInSeconds(3.0f);
+        _troopsToBeSpawnedList = new List<GameObject>();
     }
 
     public void SpawnTroopsInSeconds(float SecondsToSpawnTroop)
@@ -19,7 +17,7 @@ public class AttackTroopsSpawner : MonoBehaviour{
     }
 
     public void AddTroopInTheSpawnQueue(GameObject troop){
-        _troopsToBeSpawned.Enqueue(troop);
+        _troopsToBeSpawnedList.Add(troop);
     }
 
     private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop)
@@ -27,14 +25,26 @@ public class AttackTroopsSpawner : MonoBehaviour{
         while (ExistsTroopsInQueueToBeSpawned())
         {
             yield return new WaitForSeconds(SecondsToSpawnTroop);
-            var gameobj = Instantiate(_troopsToBeSpawned.Dequeue(), transform.position, Quaternion.identity);
+
+            var gameobj = Instantiate(_troopsToBeSpawnedList[0], transform.position, Quaternion.identity);
+
+            _troopsToBeSpawnedList.RemoveAt(0);
             
-            gameobj.GetComponent<MoveToTarget>().SetTarget(_towerTransform);
+            
+            if(_towerTransform != null) {
+                gameobj.GetComponent<MoveToTarget>().SetTarget(_towerTransform);
+            }
+            
         }
     }
 
     private bool ExistsTroopsInQueueToBeSpawned()
     {
-        return _troopsToBeSpawned.Count > 0;
+        return _troopsToBeSpawnedList.Count > 0;
+    }
+
+    public List<GameObject> TroopsToBeSpawnedList {
+        get => _troopsToBeSpawnedList;
+        set => _troopsToBeSpawnedList = value;
     }
 }
