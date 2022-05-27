@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3794386994104866679
+--- !u!1001 &8459303984202357187
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,29 +11,37 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2387762329070207996, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: targetTag
+      value: Defenders
+      objectReference: {fileID: 0}
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Name
-      value: Defender troop
+      value: BaseAttackTroop
       objectReference: {fileID: 0}
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_TagString
-      value: Defenders
+      value: Attackers
       objectReference: {fileID: 0}
     - target: {fileID: 3501017765987097345, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3501017765987097345, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_TagString
-      value: Defenders
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3787435799859370251, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961627290489240821, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: _damageDelayInSeconds
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8296844184890685808, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _troopLife
@@ -41,11 +49,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8778913355829337077, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8778913355829337077, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_TagString
-      value: Defenders
+      value: Attackers
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_RootOrder
@@ -53,11 +61,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43
+      value: -3.6581864
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7
+      value: -3.3622541
       objectReference: {fileID: 0}
     - target: {fileID: 8975433979744337589, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -93,3 +101,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+--- !u!1 &5999836981359843110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2749113139266653925, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+  m_PrefabInstance: {fileID: 8459303984202357187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5607332543267351169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999836981359843110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b5944b541296964fac9f14b04efb6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 0}
+  _regularSpeed: 5
+  _speedWhenShooting: 2
