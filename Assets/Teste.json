@@ -1,166 +1,70 @@
 {
     "NorthList": [
         {
-            "instanceID": 22120
+            "instanceID": 17330
         },
         {
-            "instanceID": 22120
+            "instanceID": 17330
         },
         {
-            "instanceID": 22120
+            "instanceID": 17360
         },
         {
-            "instanceID": 22120
+            "instanceID": 17372
         },
         {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 20144
-        },
-        {
-            "instanceID": 22060
-        },
-        {
-            "instanceID": 20144
+            "instanceID": 17372
         }
     ],
     "SouthList": [
         {
-            "instanceID": 22120
+            "instanceID": 17330
         },
         {
-            "instanceID": 22120
+            "instanceID": 17330
         },
         {
-            "instanceID": 22120
+            "instanceID": 17360
         },
         {
-            "instanceID": 22120
+            "instanceID": 17372
         },
         {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 20144
-        },
-        {
-            "instanceID": 22060
-        },
-        {
-            "instanceID": 20144
+            "instanceID": 17372
         }
     ],
     "EastList": [
         {
-            "instanceID": 22120
+            "instanceID": 17330
         },
         {
-            "instanceID": 22120
+            "instanceID": 17330
         },
         {
-            "instanceID": 22120
+            "instanceID": 17360
         },
         {
-            "instanceID": 22120
+            "instanceID": 17372
         },
         {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 20144
-        },
-        {
-            "instanceID": 22060
-        },
-        {
-            "instanceID": 20144
+            "instanceID": 17372
         }
     ],
     "WestList": [
         {
-            "instanceID": 22120
+            "instanceID": 17330
         },
         {
-            "instanceID": 22120
+            "instanceID": 17330
         },
         {
-            "instanceID": 22120
+            "instanceID": 17360
         },
         {
-            "instanceID": 22120
+            "instanceID": 17372
         },
         {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 22120
-        },
-        {
-            "instanceID": 20144
-        },
-        {
-            "instanceID": 22060
-        },
-        {
-            "instanceID": 20144
+            "instanceID": 17372
         }
     ]
 }

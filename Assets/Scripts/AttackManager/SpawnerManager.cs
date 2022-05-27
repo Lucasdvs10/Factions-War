@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace AttackManager{
     public class SpawnerManager : Manager{
@@ -8,15 +9,28 @@ namespace AttackManager{
         [SerializeField] private AttackTroopsSpawner _attackTroopsSpawnerWest;
 
 
-        private void Start() {
+        private void Awake() {
             _db = new TestDataBase();
-            GetTroopFromJson();
-            
-            InjectListsInSpawners();
         }
 
+        private void Start() {
+            StartRound();
+        }
 
-        public void InjectListsInSpawners() {
+        public void StartRound() {
+            GetTroopFromJson();
+            InjectListsInSpawners();
+            StartAllTroopsSpawners();
+        }
+
+        private void StartAllTroopsSpawners() {
+            _attackTroopsSpawnerNorth.SpawnTroopsInSeconds(2f);
+            _attackTroopsSpawnerSouth.SpawnTroopsInSeconds(2f);
+            _attackTroopsSpawnerEast.SpawnTroopsInSeconds(2f);
+            _attackTroopsSpawnerWest.SpawnTroopsInSeconds(2f);
+        }
+
+        private void InjectListsInSpawners() {
             _attackTroopsSpawnerNorth.TroopsToBeSpawned = _troopListGroup.NorthList;
             _attackTroopsSpawnerSouth.TroopsToBeSpawned = _troopListGroup.SouthList;
             _attackTroopsSpawnerEast.TroopsToBeSpawned = _troopListGroup.EastList;

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace AttackManager{
     public class AttackPanelManager : Manager{
@@ -14,15 +12,10 @@ namespace AttackManager{
             _db = new TestDataBase();
         }
 
-        private void Start() {
-            StartCoroutine(Teste());
-        }
-
-        private IEnumerator Teste() {
-            yield return new WaitForSeconds(10f);
-            print("Enviei :D");
+        public void SendAttackToDB() {
             CreateTroopsList();
             SendJsonStringToDB();
+            print("Enviei :D");
         }
 
         private void CreateTroopsList() { 

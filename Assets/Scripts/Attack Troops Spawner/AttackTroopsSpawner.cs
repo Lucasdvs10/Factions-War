@@ -5,12 +5,6 @@ using UnityEngine;
 public class AttackTroopsSpawner : MonoBehaviour
 {
     private List<GameObject> _troopsToBeSpawned;
-    public GameObject[] initializingVectorForTroopQueue;
-    void Start()
-    {
-        _troopsToBeSpawned = new List<GameObject>(initializingVectorForTroopQueue);
-        SpawnTroopsInSeconds(3.0f);
-    }
 
   public void SpawnTroopsInSeconds(float SecondsToSpawnTroop)
     {
