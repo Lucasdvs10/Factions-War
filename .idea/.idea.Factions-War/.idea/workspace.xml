@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/L troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/L troop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/S troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/S troop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/T troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/T troop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AttackSetupPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AttackSetupPanel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attack Troops Spawner/AttackTroopsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attack Troops Spawner/AttackTroopsSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/AttackPanelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/AttackPanelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/SpawnerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/SpawnerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/AttackSetupPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/AttackPanelHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/AttackSetupPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/AttackPanelHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/button/AttackSetupButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackSetupPanel/button/AttackSetupButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teste.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teste.json" afterDir="false" />
-    </list>
+    <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +78,7 @@
       <workItem from="1653326452689" duration="236000" />
       <workItem from="1653438915938" duration="1571000" />
       <workItem from="1653512765609" duration="7161000" />
-      <workItem from="1653673238444" duration="3402000" />
+      <workItem from="1653673238444" duration="3476000" />
     </task>
     <servers />
   </component>
@@ -116,24 +102,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AttackManager/AttackPanelManager.cs</url>
-          <line>21</line>
-          <properties documentPath="C:\Users\lucas\Desktop\Projetos Atuais\Factions-War\Assets\Scripts\AttackManager\AttackPanelManager.cs" initialLine="21" containingFunctionPresentation="method 'CreateTroopsList'">
-            <startOffsets>
-              <option value="683" />
-            </startOffsets>
-            <endOffsets>
-              <option value="857" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
