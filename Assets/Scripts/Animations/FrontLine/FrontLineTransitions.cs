@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class TransitionsSniper : MonoBehaviour
+public class FrontLineTransitions : MonoBehaviour
 {
     private Transform _range;
     private InnerRangeDamage _innerRangeDamage; 
-    private Animator _sniperAnimator;
+    private Animator _frontLineAnimator;
     private TargetRadar _targetRadar;
 
     void Start()
     {
-        _sniperAnimator = GetComponent<Animator>();
-        _sniperAnimator.SetBool("isShooting", false);
+        _frontLineAnimator = GetComponent<Animator>();
+        _frontLineAnimator.SetBool("isShooting", false);
 
         _range = transform.Find("Range");
         _innerRangeDamage = _range.GetComponent<InnerRangeDamage>();
@@ -20,14 +20,15 @@ public class TransitionsSniper : MonoBehaviour
     }
     
 
+
     void TransitionToShooting()
     {
-        _sniperAnimator.SetBool("isShooting", true);
+        _frontLineAnimator.SetBool("isShooting", true);
     }
 
     void TransitionToWalking()
     {
-        _sniperAnimator.SetBool("isShooting", false);
+        _frontLineAnimator.SetBool("isShooting", false);
     }
 
 }
