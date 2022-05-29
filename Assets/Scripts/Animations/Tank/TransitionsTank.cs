@@ -31,6 +31,7 @@ public class TransitionsTank : MonoBehaviour
         else if (_isTarget == 1)
         {
             _animator.SetBool("isTarget", true);
+            _animator.SetInteger("targetCount", 1);
             _isTarget = 0;
         }
         else
