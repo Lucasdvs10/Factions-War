@@ -23,26 +23,30 @@ public class TransitionsTank : MonoBehaviour
             }
         }
         _isTarget = _isTarget / 2; // Nao entendi o porque de ter que dividir por dois
-        if (_isTarget == 0)
+        
+        switch (_isTarget)
         {
-            _animator.SetBool("isTarget", false);
-            _animator.SetInteger("targetCount", 0);
+            case 0:
+                _animator.SetBool("isTarget", false);
+                _animator.SetInteger("targetCount", 0);
+                break;
+            case 1:
+                _animator.SetBool("isTarget", true);
+                _animator.SetInteger("targetCount", 1);
+                _isTarget = 0;
+                break;
+            default:
+                _animator.SetBool("isTarget", true);
+                _animator.SetInteger("targetCount", 3);
+                _isTarget = 0;
+                break;
         }
-        else if (_isTarget == 1)
         {
-            _animator.SetBool("isTarget", true);
-            _animator.SetInteger("targetCount", 1);
-            _isTarget = 0;
-        }
-        else
-        {
-            _animator.SetBool("isTarget", true);
-            _animator.SetInteger("targetCount", 3);
-            _isTarget = 0;
+            
         }
     }
 
-    GameObject[] GetAllThoseWhoAim()
+    public GameObject[] GetAllThoseWhoAim()
     {
         GameObject[] arrayOfThoseWhoAim;
         if (gameObject.CompareTag("Attackers"))
