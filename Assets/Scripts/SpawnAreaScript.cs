@@ -13,6 +13,15 @@ public class SpawnAreaScript : MonoBehaviour {
     public static event Action CharacterCreationEvent;
     public event Action<GameObject> CharacterChangedEvent;
 
+    private void Start() {
+       var buttonChangersList = FindObjectsOfType<CharacterButtonChanger>();
+       if(buttonChangersList != null) {
+           foreach (var button in buttonChangersList) {
+               button.SpawnAreaScriptsList.Add(this);
+           }
+       }
+    }
+
     public void SetCharacter(GameObject newCharacter, int value){
         character = newCharacter;   
         CharacterChangedEvent?.Invoke(newCharacter);
@@ -33,9 +42,4 @@ public class SpawnAreaScript : MonoBehaviour {
         }
     }
     
-    // private void OnDrawGizmos() {
-    //     var collider = GetComponent<BoxCollider2D>();
-    //     Gizmos.color = Color.yellow;
-    //     Gizmos.DrawWireCube(transform.position + new Vector3(collider.offset.x, collider.offset.y, 0), collider.bounds.extents * 2);
-    // }
 }

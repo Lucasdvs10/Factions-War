@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CharacterButtonChanger : MonoBehaviour
 {
-    public SpawnAreaScript spawnAreacript;
+    public List<SpawnAreaScript> SpawnAreaScriptsList;
     public GameObject character;
 
     //Sets onClick event
@@ -12,8 +13,11 @@ public class CharacterButtonChanger : MonoBehaviour
     }
 
     //Selects which character will be spawned
-    private void ChangeGameObject(){ 
-        spawnAreacript.SetCharacter(character, int.Parse(transform.GetChild(0).GetComponent<Text>().text));
+    private void ChangeGameObject(){
+
+        foreach (var spawnAreaScript in SpawnAreaScriptsList) {
+            spawnAreaScript.SetCharacter(character, int.Parse(transform.GetChild(0).GetComponent<Text>().text));
+        }
     }
 
 }
