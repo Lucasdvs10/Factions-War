@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 114972405036935462, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: m_Radius
+      value: 3.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 114972405036935462, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -118,6 +122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5944b541296964fac9f14b04efb6ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 0}
+  _targetTransform: {fileID: 0}
   _regularSpeed: 5
   _speedWhenShooting: 2

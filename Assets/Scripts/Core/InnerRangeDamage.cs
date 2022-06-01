@@ -1,18 +1,16 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(TargetRadar))]
 public class InnerRangeDamage : MonoBehaviour
 {
+    [SerializeField] private float _damage;
+    [SerializeField] private float _damageDelayInSeconds;
+    
     private TargetRadar _targetRadar;
     private GameObject _whoToDamage;
     private LifeScript _lifeScriptFromTarget;
     private bool _canDamage = true;
-    
-    
-    [SerializeField] private float _damage;
-    [SerializeField] private float _damageDelayInSeconds;
     
     
     private void Awake() {
@@ -35,7 +33,7 @@ public class InnerRangeDamage : MonoBehaviour
     private IEnumerator ApplyDamageLoopCoroutine(float delayInSeconds, GameObject targetGameobj) {
         var counter = 0f;
         while (_canDamage) {
-           
+            if (targetGameobj == null) yield break;
             counter += Time.deltaTime;
 
             if(counter >= delayInSeconds) {
@@ -59,7 +57,7 @@ public class InnerRangeDamage : MonoBehaviour
 
     private void ApplyDamageToTarget(GameObject targetGameobj) {
         SetWhoToDamageGameobj(targetGameobj);
-        _lifeScriptFromTarget = _whoToDamage.GetComponent<LifeScript>();
+        _lifeScriptFromTarget = _whoToDamage?.GetComponent<LifeScript>();
         _lifeScriptFromTarget?.ApplyDamage(_damage);
     }
 

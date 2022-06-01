@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnAreaScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnAreaScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CharacterButtonChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CharacterButtonChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teste.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teste.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Troops/Base Defender troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Troops/Base Defender troop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Troops/BaseAttackTroop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Troops/BaseAttackTroop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/InnerRangeDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/InnerRangeDamage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <workItem from="1653087080038" duration="460000" />
       <workItem from="1653087885305" duration="3045000" />
       <workItem from="1653678167715" duration="721000" />
-      <workItem from="1654092310368" duration="2023000" />
+      <workItem from="1654092310368" duration="3118000" />
     </task>
     <servers />
   </component>

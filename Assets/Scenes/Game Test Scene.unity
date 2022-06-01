@@ -1173,13 +1173,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5684690155889942823, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1337165618669066642, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
+    - target: {fileID: 5684690155889942823, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
       propertyPath: spawnAreacript
       value: 
       objectReference: {fileID: 1843827303}
     - target: {fileID: 6630077345074900747, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1337165618669066642, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
+    - target: {fileID: 6630077345074900747, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
       propertyPath: spawnAreacript
       value: 
       objectReference: {fileID: 1843827303}
+    - target: {fileID: 7018132904974395935, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1337165618669066642, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
     - target: {fileID: 7018132904974395935, guid: 58b34d47e8dea004bb315bbb101c231d, type: 3}
       propertyPath: spawnAreacript
       value: 
