@@ -5,12 +5,14 @@ namespace AttackManager{
         private const string _jsonPath = @"C:\Users\lucas\Desktop\Projetos Atuais\Factions-War\Assets\Teste.json";
 
         public void SendJson(string jsonString) {
-            File.WriteAllText(_jsonPath, jsonString);
+            File.WriteAllText(Path, jsonString);
         }
 
         public string GetJsonString() {
-            var jsonString = File.ReadAllText(_jsonPath);
+            var jsonString = File.ReadAllText(Path);
             return jsonString;
         }
+
+        public string Path => _jsonPath;
     }
 }
