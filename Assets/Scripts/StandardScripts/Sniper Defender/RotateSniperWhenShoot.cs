@@ -1,6 +1,4 @@
-﻿using System;
-using Unity.Mathematics;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Sniper_Defender{
     public class RotateSniperWhenShoot : MonoBehaviour{
@@ -30,7 +28,7 @@ namespace Sniper_Defender{
             
             var rotation = Mathf.Atan2(direction.y, direction.x);
 
-            transform.rotation = quaternion.Euler(Vector3.forward * rotation);
+            transform.rotation = Quaternion.Euler(Vector3.forward * rotation);
         }
         
     }

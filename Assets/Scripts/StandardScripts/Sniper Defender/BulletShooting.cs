@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using Unity.Mathematics;
 using UnityEngine;
 
 namespace Sniper_Defender{
@@ -51,7 +50,7 @@ namespace Sniper_Defender{
             var rotation = Mathf.Atan2(direction.y, direction.x);
 
             
-            var gameobj = Instantiate(BulletPrefab, transform.position, quaternion.Euler(Vector3.forward * rotation));
+            var gameobj = Instantiate(BulletPrefab, transform.position, Quaternion.Euler(Vector3.forward * rotation));
             
             
             gameobj.GetComponent<Bullet>().SetSpeedVector(new Vector3(direction.x, direction.y, 0f).normalized);
