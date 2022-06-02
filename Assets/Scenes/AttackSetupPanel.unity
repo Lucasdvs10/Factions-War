@@ -301,9 +301,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 735593057}
-        m_TargetAssemblyTypeName: AttackManager.AttackPanelManager, Assembly-CSharp
-        m_MethodName: SendAttackToDB
+      - m_Target: {fileID: 1926465218}
+        m_TargetAssemblyTypeName: StandardScripts.AttackManager.PanelContrllerMono,
+          StandardScripts
+        m_MethodName: InitializeAndSendToDataBase
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -351,17 +352,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364985717}
   m_CullTransparentMesh: 1
---- !u!114 &735593057 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5057528402316403726, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
-  m_PrefabInstance: {fileID: 5057528401927923311}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41d2858266d4891b94fa4c8d5ee5391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &970663315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -620,6 +610,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1926465218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6200467427635984457, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+  m_PrefabInstance: {fileID: 5057528401927923311}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8d479e840e435e8ab583fa3e3633a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2147029491
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,5 +791,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel Manager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6200467427635984457, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+      propertyPath: _EastPanel
+      value: 
+      objectReference: {fileID: 164641491}
+    - target: {fileID: 6200467427635984457, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+      propertyPath: _westPanel
+      value: 
+      objectReference: {fileID: 164641491}
+    - target: {fileID: 6200467427635984457, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+      propertyPath: _northPanel
+      value: 
+      objectReference: {fileID: 164641491}
+    - target: {fileID: 6200467427635984457, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
+      propertyPath: _southPanel
+      value: 
+      objectReference: {fileID: 164641491}
+    m_RemovedComponents:
+    - {fileID: 5057528402316403726, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 136876d27b52da1459fd07a4b2a74a74, type: 3}
