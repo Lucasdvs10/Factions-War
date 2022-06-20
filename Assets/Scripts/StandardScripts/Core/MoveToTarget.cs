@@ -25,15 +25,17 @@ public class MoveToTarget : MonoBehaviour
     private void OnEnable() {
         var targetRadar = GetComponentInChildren<TargetRadar>();
 
-        targetRadar.CurrentTargetChangedEvent += ApplySpeedWhenShooting;
-
+        if(targetRadar != null) {
+            targetRadar.CurrentTargetChangedEvent += ApplySpeedWhenShooting;
+        }
     }
     
     private void OnDisable() {
         var targetRadar = GetComponentInChildren<TargetRadar>();
 
-        targetRadar.CurrentTargetChangedEvent -= ApplySpeedWhenShooting;
-
+        if(targetRadar != null) {
+            targetRadar.CurrentTargetChangedEvent -= ApplySpeedWhenShooting;
+        }
     }
 
 
