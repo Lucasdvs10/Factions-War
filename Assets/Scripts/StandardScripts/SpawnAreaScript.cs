@@ -22,8 +22,9 @@ public class SpawnAreaScript : MonoBehaviour {
        }
     }
 
-    public void SetCharacter(GameObject newCharacter, int value){
-        character = newCharacter;   
+    public void SetCharacter(GameObject newCharacter, int value) {
+        character = newCharacter;  
+        if (newCharacter == null) return;
         CharacterChangedEvent?.Invoke(newCharacter);
         characterCost = value;
     }
@@ -31,6 +32,8 @@ public class SpawnAreaScript : MonoBehaviour {
     // Spawning Method
     public void OnMouseDown() {
         //Checks if there is money to place a character
+
+        if (character == null) return;
         
         if(currentMoney.GetCurrentMoney >= characterCost)
         {
