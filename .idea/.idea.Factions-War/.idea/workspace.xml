@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/L troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/L troop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/S troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/S troop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/T troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/Troops/T troop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/AttackSetupPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/AttackSetupPanel/AttackSetupPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AttackSetupPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AttackSetupPanel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game Test Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attack Troops Spawner/AttackTroopsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attack Troops Spawner/AttackTroopsSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager/TestDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager/TestDataBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Teste.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teste.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +21,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -29,11 +32,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Unity.exe" />
@@ -84,6 +94,9 @@
       <workItem from="1653087080038" duration="460000" />
       <workItem from="1653087885305" duration="3045000" />
       <workItem from="1653678167715" duration="721000" />
+      <workItem from="1655142629510" duration="2605000" />
+      <workItem from="1655691606535" duration="5852000" />
+      <workItem from="1655899960380" duration="754000" />
     </task>
     <servers />
   </component>
@@ -103,7 +116,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
