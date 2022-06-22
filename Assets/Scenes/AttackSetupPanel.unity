@@ -507,6 +507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AttackSetupPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 8726646315092207993, guid: fe1456a7f4dabcd47b139e252818b002, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe1456a7f4dabcd47b139e252818b002, type: 3}
 --- !u!1 &1331171534
