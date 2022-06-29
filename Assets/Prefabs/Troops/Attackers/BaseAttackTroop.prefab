@@ -41,7 +41,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787435799859370251, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6961627290489240821, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _damageDelayInSeconds
