@@ -316,8 +316,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 364985722}
-        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
-        m_MethodName: pauseSound
+        m_TargetAssemblyTypeName: PlaySound, StandardScripts
+        m_MethodName: PlayOneShot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -377,8 +377,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af9c6fad4151304db32607e5d1626df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundPlayer: {fileID: 660781625}
-  audioClip: {fileID: 8300000, guid: 4272c066868d0b84bb3d8a424eded86c, type: 3}
+  _soundPlayer: {fileID: 660781625}
+  _audioClip: {fileID: 8300000, guid: 4272c066868d0b84bb3d8a424eded86c, type: 3}
 --- !u!1001 &660781624
 PrefabInstance:
   m_ObjectHideFlags: 0

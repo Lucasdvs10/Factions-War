@@ -5,13 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuFunctions : MonoBehaviour
 {
-    [SerializeField] int mainSceneIndex = 0;
-    [SerializeField] Component playSound;
+    [SerializeField] int _mainSceneIndex = 0;
 
     //Loads the scene on the indexed location set on mainSceneIndex from the build.
     public void MainSceneLoader()
     {
-        SceneManager.LoadScene(mainSceneIndex);
+        SceneManager.LoadScene(_mainSceneIndex);
     }
 
     //Closes the application.

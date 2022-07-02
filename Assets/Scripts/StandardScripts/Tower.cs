@@ -28,7 +28,7 @@ public class Tower : MonoBehaviour
             Destroy(enemyCollider.gameObject);
             _towerHealth.ApplyDamage(_damageOnCollision);
 
-            _playSound.playOneShot();
+            _playSound.PlayOneShot();
         }
     }
 }

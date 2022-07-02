@@ -3,32 +3,34 @@ using UnityEngine;
 
 public class PlaySound : MonoBehaviour
 {
-    [SerializeField] AudioSource soundPlayer;
-    [SerializeField] AudioClip audioClip;
+    [SerializeField] AudioSource _soundPlayer;
+    [SerializeField] AudioClip _audioClip;
 
-    public void playSound()
+    //Play sound if there is no other sound being played on soundPlayer.Play()
+    public void Play()
     {
-        soundPlayer.clip = audioClip;
-        soundPlayer.Play();
+        _soundPlayer.clip = _audioClip;
+        _soundPlayer.Play();
     }
 
-    public void pauseSound()
+    public void Pause()
     {
-        soundPlayer.Pause();
+        _soundPlayer.Pause();
     }
 
-    public void unPauseSound()
+    public void UnPause()
     {
-        soundPlayer.UnPause();
+        _soundPlayer.UnPause();
     }
 
-    public void playOneShot()
+    //Play the sound without interfering with previous sounds
+    public void PlayOneShot()
     {
-        soundPlayer.PlayOneShot(audioClip, 1.0F);
+        _soundPlayer.PlayOneShot(_audioClip, 0.7F);
     }
 
-    public void stop()
+    public void Stop()
     {
-        soundPlayer.Stop();
+        _soundPlayer.Stop();
     }
 }

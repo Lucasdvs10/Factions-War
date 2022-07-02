@@ -17,7 +17,7 @@ public class EventExample : MonoBehaviour
     {
         if (Input.GetKeyDown("w"))
         {
-            _playSound.playSound();
+            _playSound.Play();
         }
     }
 }

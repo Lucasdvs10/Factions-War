@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CharacterButtonChanger : MonoBehaviour
 {
     public List<SpawnAreaScript> SpawnAreaScriptsList;
-    public GameObject character;
+    public GameObject _character;
 
     //Sets onClick event
     private void Start() {
@@ -16,7 +16,7 @@ public class CharacterButtonChanger : MonoBehaviour
     private void ChangeGameObject(){
 
         foreach (var spawnAreaScript in SpawnAreaScriptsList) {
-            spawnAreaScript.SetCharacter(character, int.Parse(transform.GetChild(0).GetComponent<Text>().text));
+            spawnAreaScript.SetCharacter(_character, int.Parse(transform.GetChild(0).GetComponent<Text>().text));
         }
     }
 

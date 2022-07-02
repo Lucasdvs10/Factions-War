@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PassiveIncome : MonoBehaviour
 {
-    [SerializeField] float startTime = 2.0f;
-    [SerializeField] float secondsBetweenRepeat = 2.0f;
-    [SerializeField] int passiveValue = 0;
+    [SerializeField] private float _startTime = 2.0f;
+    [SerializeField] private float _secondsBetweenRepeat = 2.0f;
+    [SerializeField] private int _passiveValue = 0;
 
     //Calls AddPassiveIncome() function after startTime seconds and every time secondsBetweenRepeat seconds passes.
     void Start()
     {
-        InvokeRepeating("AddPassiveIncome", startTime, secondsBetweenRepeat);
+        InvokeRepeating("AddPassiveIncome", _startTime, _secondsBetweenRepeat);
     }
 
     //Adds passiveValue to game money.
     void AddPassiveIncome()
     {
-        gameObject.GetComponent<CurrentMoney>().UpdateMoney(passiveValue);
+        gameObject.GetComponent<CurrentMoney>().UpdateMoney(_passiveValue);
     }
 }
