@@ -7,14 +7,17 @@ public class Tower : MonoBehaviour
 
     private TowerHealth _towerHealth;
 
+    private PlaySound _playSound;
+
     [SerializeField] private string _enemyTag;
 
-    [SerializeField]
-    private float _damageOnCollision;
+    [SerializeField] private float _damageOnCollision;
 
     private void Start()
     {
         _towerHealth = GetComponent<TowerHealth>();
+
+        _playSound = GetComponent<PlaySound>();
     }
 
     private void OnTriggerEnter2D(Collider2D enemyCollider)
@@ -24,6 +27,8 @@ public class Tower : MonoBehaviour
             OnEnemyAndTowerCollision?.Invoke();
             Destroy(enemyCollider.gameObject);
             _towerHealth.ApplyDamage(_damageOnCollision);
+
+            _playSound.playOneShot();
         }
     }
 }

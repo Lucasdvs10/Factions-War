@@ -5,14 +5,19 @@ using UnityEngine;
 public class EventExample : MonoBehaviour
 {
     //Game object with play sound component
-    [SerializeField] PlaySound playSound;
+    PlaySound _playSound;
+
+    void Start()
+    {
+        _playSound = GetComponent<PlaySound>();
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("w"))
         {
-            playSound.playSound();
+            _playSound.playSound();
         }
     }
 }
