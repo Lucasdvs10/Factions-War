@@ -139,6 +139,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f38f408bbe40564ebcf0063f15b28c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &145966791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2196107813644361146, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_Name
+      value: AudioSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 173.81502
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 146.7366
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6904.8267
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185520659855308350, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+--- !u!82 &156743978 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1998980537448028981, guid: b61635bf8d27fbd4ba4d1c15b106aba4, type: 3}
+  m_PrefabInstance: {fileID: 145966791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &221952183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1286,7 @@ GameObject:
   - component: {fileID: 1519207508}
   - component: {fileID: 1519207507}
   - component: {fileID: 1519207506}
+  - component: {fileID: 1519207509}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -1308,6 +1371,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1519207509}
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: playSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1519207507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,6 +1421,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519207504}
   m_CullTransparentMesh: 1
+--- !u!114 &1519207509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519207504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af9c6fad4151304db32607e5d1626df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPlayer: {fileID: 156743978}
+  audioClip: {fileID: 8300000, guid: 4272c066868d0b84bb3d8a424eded86c, type: 3}
 --- !u!1001 &1612565738
 PrefabInstance:
   m_ObjectHideFlags: 0
