@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuFunctions : MonoBehaviour
 {
     [SerializeField] int mainSceneIndex = 0;
+    [SerializeField] Component playSound;
 
     //Loads the scene on the indexed location set on mainSceneIndex from the build.
     public void MainSceneLoader()

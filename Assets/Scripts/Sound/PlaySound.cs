@@ -12,4 +12,24 @@ public class PlaySound : MonoBehaviour
         soundPlayer.clip = audioClip;
         soundPlayer.Play();
     }
+
+    public void pauseSound()
+    {
+        soundPlayer.Pause();
+    }
+
+    public void unPauseSound()
+    {
+        soundPlayer.UnPause();
+    }
+
+    public void playOneShot()
+    {
+        soundPlayer.PlayOneShot(audioClip, 1.0F);
+    }
+
+    public void stop()
+    {
+        soundPlayer.Stop();
+    }
 }

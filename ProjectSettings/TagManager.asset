@@ -9,6 +9,7 @@ TagManager:
   - Attackers
   - Defenders
   - Tower
+  - AudioSource
   layers:
   - Default
   - TransparentFX
