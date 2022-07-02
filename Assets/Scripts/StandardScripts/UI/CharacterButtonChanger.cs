@@ -9,6 +9,7 @@ public class CharacterButtonChanger : MonoBehaviour
 
     //Sets onClick event
     private void Start() {
+        
         GetComponent<Button>().onClick.AddListener(ChangeGameObject);
     }
 
