@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    public static event Action OnEnemyAndTowerCollision;
+    private static event Action OnEnemyAndTowerCollision;
 
-    private TowerHealth _towerHealth;
+    public TowerHealth _towerHealth;
 
     [SerializeField] private string _enemyTag;
 
