@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1998980537448028981}
   - component: {fileID: 1998980537448028979}
   m_Layer: 0
-  m_Name: AudioSource
+  m_Name: SoundEffectSource
   m_TagString: AudioSource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
