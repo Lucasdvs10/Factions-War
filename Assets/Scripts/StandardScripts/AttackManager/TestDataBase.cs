@@ -1,8 +1,9 @@
 ﻿using System.IO;
+using UnityEngine;
 
 namespace AttackManager{
     public class TestDataBase : IBancoDeDados{
-        public string _jsonPath = @"C:\Users\lucas\Desktop\Projetos Atuais\Factions-War\Assets\Teste.json";
+        public string _jsonPath = Application.dataPath + @"\Teste.json";
 
         public void SendJsonStringToDataBase(string jsonString) {
             File.WriteAllText(_jsonPath, jsonString);

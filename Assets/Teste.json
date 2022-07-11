@@ -1,70 +1,39 @@
 {
     "NorthList": [
         {
-            "instanceID": 18702
+            "instanceID": 6340
         },
         {
-            "instanceID": 18702
+            "instanceID": 6294
         },
         {
-            "instanceID": 18702
-        },
-        {
-            "instanceID": 19518
-        },
-        {
-            "instanceID": 21308
+            "instanceID": 6232
         }
     ],
     "SouthList": [
         {
-            "instanceID": 18702
+            "instanceID": 6340
         },
         {
-            "instanceID": 18702
+            "instanceID": 6294
         },
         {
-            "instanceID": 18702
-        },
-        {
-            "instanceID": 19518
-        },
-        {
-            "instanceID": 21308
+            "instanceID": 6232
         }
     ],
-    "EastList": [
-        {
-            "instanceID": 18702
-        },
-        {
-            "instanceID": 18702
-        },
-        {
-            "instanceID": 18702
-        },
-        {
-            "instanceID": 19518
-        },
-        {
-            "instanceID": 21308
-        }
-    ],
+    "EastList": [],
     "WestList": [
         {
-            "instanceID": 18702
+            "instanceID": 6340
         },
         {
-            "instanceID": 18702
+            "instanceID": 6340
         },
         {
-            "instanceID": 18702
+            "instanceID": 6294
         },
         {
-            "instanceID": 19518
-        },
-        {
-            "instanceID": 21308
+            "instanceID": 6232
         }
     ]
 }
