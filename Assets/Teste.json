@@ -1,39 +1,18 @@
 {
     "NorthList": [
         {
-            "instanceID": 6340
-        },
-        {
-            "instanceID": 6294
-        },
-        {
-            "instanceID": 6232
+            "instanceID": 17460
         }
     ],
     "SouthList": [
         {
-            "instanceID": 6340
-        },
-        {
-            "instanceID": 6294
-        },
-        {
-            "instanceID": 6232
+            "instanceID": 17460
         }
     ],
     "EastList": [],
     "WestList": [
         {
-            "instanceID": 6340
-        },
-        {
-            "instanceID": 6340
-        },
-        {
-            "instanceID": 6294
-        },
-        {
-            "instanceID": 6232
+            "instanceID": 17460
         }
     ]
 }

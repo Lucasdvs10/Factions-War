@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using StandardScripts.AttackManager;
 using UnityEngine;
 
 public class AttackTroopsSpawner : MonoBehaviour{
@@ -20,8 +22,13 @@ public class AttackTroopsSpawner : MonoBehaviour{
         _troopsToBeSpawnedList.Add(troop);
     }
 
-    private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop)
-    {
+    private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop) {
+
+        if(_troopsToBeSpawnedList.Count > 0){
+            _troopsToBeSpawnedList.Last().AddComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft =
+                GetComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft;
+        }
+        
         while (ExistsTroopsInQueueToBeSpawned())
         {
             yield return new WaitForSeconds(SecondsToSpawnTroop);

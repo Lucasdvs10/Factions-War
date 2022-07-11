@@ -1,16 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class CurrentRound : MonoBehaviour
-{
-    private int _currentRound;
-    [SerializeField]private Text _textCurrentRound;
 
-    public void RefreshTheCurrentRound(int n) {
-        _currentRound = n;
-        _textCurrentRound.text = n.ToString();
+public class CurrentRound : MonoBehaviour{
+    private int _currentRound;
+    private Text _text;
+
+    private void Awake() {
+        _text = GetComponent<Text>();
     }
-    void Update()
-    {
-        RefreshTheCurrentRound(_currentRound);
+
+    private void Start() {
+        _currentRound = 0;
+        _text.text = _currentRound.ToString();
     }
+    
+    public void AddOneRoundAndUpdateUI() {
+        _currentRound++;
+        _text.text = _currentRound.ToString();
+    }
+    
 }
