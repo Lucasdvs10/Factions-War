@@ -1,18 +1,16 @@
 {
     "NorthList": [
         {
-            "instanceID": 17460
-        }
-    ],
-    "SouthList": [
+            "instanceID": 6796
+        },
         {
-            "instanceID": 17460
+            "instanceID": 6466
+        },
+        {
+            "instanceID": 6864
         }
     ],
+    "SouthList": [],
     "EastList": [],
-    "WestList": [
-        {
-            "instanceID": 17460
-        }
-    ]
+    "WestList": []
 }

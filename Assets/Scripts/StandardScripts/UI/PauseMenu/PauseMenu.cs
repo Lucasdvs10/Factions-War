@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = false;
     }
     // Pause is called once the game is paused
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
