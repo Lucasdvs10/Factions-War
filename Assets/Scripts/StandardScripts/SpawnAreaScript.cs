@@ -38,7 +38,7 @@ namespace StandardScripts{
         
             if(currentMoney.GetCurrentMoney >= characterCost)
             {
-                Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.identity);
+                Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + (Vector3.forward * offSet), Quaternion.identity);
         
                 currentMoney.UpdateMoney(-characterCost);
             

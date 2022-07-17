@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  offSet: 12
+  offSet: 1
   currentMoney: {fileID: 0}
 --- !u!60 &7257633674772831046
 PolygonCollider2D:

@@ -7,7 +7,7 @@ namespace StandardScripts.AttackManager{
 
 
         private void OnDestroy() {
-            if(!GameObject.FindWithTag("Attackers"))
+            if(GameObject.FindWithTag("Attackers") == null)
                 TheresNoTroopLeft?.Invoke();
         }
     }
