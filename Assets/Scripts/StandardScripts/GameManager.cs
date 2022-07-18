@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
-    public static GameState State;
+    public static GameState state;
 
     public static event Action<GameState> OnGameStateChanged;
     public UnityEvent PreRoundEvent;
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateGameState(GameState newState)
     {
-        State = newState;
+        state = newState;
 
         switch (newState)
         {
@@ -42,9 +42,11 @@ public class GameManager : MonoBehaviour
                 PauseEvent?.Invoke();
                 break;
             case GameState.Victory:
+            Debug.Log("Vencemos!");
                 VictoryEvent?.Invoke();
                 break;
             case GameState.Lose:
+            Debug.Log("Voce perdeu...");
                 LoseEvent?.Invoke();
                 break;
             default:
@@ -52,7 +54,7 @@ public class GameManager : MonoBehaviour
         }
         OnGameStateChanged?.Invoke(newState);
     }
-
+    
     public void SetRoundState() {
         UpdateGameState(GameState.Round);
     } 
@@ -77,6 +79,7 @@ public class GameManager : MonoBehaviour
         PreRound,
         Round,
         Paused,
+        Decide,
         Victory,
         Lose
     }

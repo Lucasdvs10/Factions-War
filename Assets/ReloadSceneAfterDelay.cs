@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuFunctions : MonoBehaviour
+public class ReloadSceneAfterDelay : MonoBehaviour
 {
     [SerializeField] int mainSceneIndex = 0;
 
     //Loads the scene on the indexed location set on mainSceneIndex from the build.
-    public void SceneLoader()
+
+    private IEnumerator SceneLoader()
     {
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene(mainSceneIndex);
     }
 
-    //Closes the application.
-    public void QuitGame()
+    public void CallSceneLoader()
     {
-        Debug.Log("Quitted game!");
-        Application.Quit();
+        StartCoroutine(SceneLoader());
+
     }
+
 }

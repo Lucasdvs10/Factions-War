@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class CurrentRound : MonoBehaviour{
     private int _currentRound;
     private Text _text;
 
-    private void Awake() {
+    
+    void Awake() {
         _text = GetComponent<Text>();
+
     }
+
 
     private void Start() {
         _currentRound = 0;
