@@ -1,36 +1,25 @@
 {
-    "NorthList": [
-        {
-            "instanceID": 17960
-        },
-        {
-            "instanceID": 17616
-        },
-        {
-            "instanceID": 17962
-        }
-    ],
-    "SouthList": [
-        {
-            "instanceID": 17960
-        },
-        {
-            "instanceID": 17616
-        },
-        {
-            "instanceID": 17962
-        }
-    ],
+    "NorthList": [],
+    "SouthList": [],
     "EastList": [],
     "WestList": [
         {
-            "instanceID": 17960
+            "instanceID": 17794
         },
         {
-            "instanceID": 17616
+            "instanceID": 17490
         },
         {
-            "instanceID": 17962
+            "instanceID": 17794
+        },
+        {
+            "instanceID": 17490
+        },
+        {
+            "instanceID": 17792
+        },
+        {
+            "instanceID": 17490
         }
     ]
 }

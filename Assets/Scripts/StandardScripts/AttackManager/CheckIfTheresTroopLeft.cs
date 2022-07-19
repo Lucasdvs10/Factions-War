@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace StandardScripts.AttackManager{
@@ -6,9 +6,10 @@ namespace StandardScripts.AttackManager{
         public UnityEvent TheresNoTroopLeft;
 
 
-        private void OnDestroy() {
-            if(GameObject.FindWithTag("Attackers") == null)
+        public void OnDestroy() {
+            if(!GameObject.FindWithTag("Attackers"))
                 TheresNoTroopLeft?.Invoke();
+                
         }
     }
 }

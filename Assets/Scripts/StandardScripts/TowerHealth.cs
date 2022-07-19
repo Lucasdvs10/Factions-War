@@ -1,8 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TowerHealth : MonoBehaviour
 {
+    public UnityEvent TowerOnDeath;
     [SerializeField] private float _towerHealth;
     
     public static event Action<float> OnTowerDamageTriggered;
@@ -16,6 +18,7 @@ public class TowerHealth : MonoBehaviour
         if (_towerHealth <= 0)
         {
             OnZeroTowerHealth?.Invoke();
+            TowerOnDeath?.Invoke();
         }
         return _towerHealth;
     }

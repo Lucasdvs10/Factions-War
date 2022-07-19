@@ -234,6 +234,7 @@ RectTransform:
   - {fileID: 394948529}
   - {fileID: 804463830}
   - {fileID: 2116422020}
+  - {fileID: 631084743}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -301,6 +302,9 @@ GameObject:
   - component: {fileID: 589843642}
   - component: {fileID: 589843641}
   - component: {fileID: 589843640}
+  - component: {fileID: 589843643}
+  - component: {fileID: 589843644}
+  - component: {fileID: 589843645}
   m_Layer: 0
   m_Name: ' Game Manager'
   m_TagString: Untagged
@@ -367,6 +371,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 589843643}
+        m_TargetAssemblyTypeName: StandardScripts.ActivateAndDeactivateGameObjs,
+          StandardScripts
+        m_MethodName: DeactivateGameObjs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   RoundEvent:
     m_PersistentCalls:
       m_Calls:
@@ -407,6 +424,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 589843643}
+        m_TargetAssemblyTypeName: StandardScripts.ActivateAndDeactivateGameObjs,
+          StandardScripts
+        m_MethodName: DeactivateGameObjs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   PauseEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -415,7 +445,32 @@ MonoBehaviour:
       m_Calls: []
   LoseEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 589843643}
+        m_TargetAssemblyTypeName: StandardScripts.ActivateAndDeactivateGameObjs,
+          StandardScripts
+        m_MethodName: ActivateGameObjs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 589843645}
+        m_TargetAssemblyTypeName: ReloadSceneAfterDelay, Assembly-CSharp
+        m_MethodName: CallSceneLoader
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &589843642
 Transform:
   m_ObjectHideFlags: 0
@@ -430,6 +485,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &589843643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589843639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11365570f684077bbba901b1cbeac9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjectsList:
+  - {fileID: 631084742}
+--- !u!114 &589843644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589843639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f25d56c7b3c61a478e345ff3496f0ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSceneIndex: 1
+--- !u!114 &589843645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589843639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf551298cae600c429820c53729e2992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSceneIndex: 1
 --- !u!1 &627605301
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +780,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe1456a7f4dabcd47b139e252818b002, type: 3}
+--- !u!1 &631084742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 631084743}
+  - component: {fileID: 631084745}
+  - component: {fileID: 631084744}
+  m_Layer: 5
+  m_Name: Lose Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &631084743
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631084742}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -106.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 221952187}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 42, y: -12}
+  m_SizeDelta: {x: 234.094, y: 85.8111}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &631084744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631084742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 32
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Voc\xEA Perdeu..."
+--- !u!222 &631084745
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631084742}
+  m_CullTransparentMesh: 1
 --- !u!114 &634646259 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -1824,7 +1998,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2731,6 +2905,34 @@ PrefabInstance:
     - target: {fileID: 1928519832564194101, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: m_Name
       value: Central Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125775646890839406, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125775646890839406, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125775646890839406, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 589843641}
+    - target: {fileID: 4125775646890839406, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125775646890839406, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLoseState
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125775646890839406, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125775646890839406, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9129948387626986722, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: m_RootOrder
