@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,6 +13,9 @@ public class InnerRangeDamage : MonoBehaviour
     private LifeScript _lifeScriptFromTarget;
     private bool _canDamage = true;
     
+    public event Action OnDamageBeingApplied;
+    // These events help in the animations of the troops !
+    public event Action OnDamageNotBeingApplied;
     
     private void Awake() {
         _targetRadar = GetComponent<TargetRadar>();
@@ -39,6 +43,7 @@ public class InnerRangeDamage : MonoBehaviour
             if(counter >= delayInSeconds) {
                 counter = 0f;
                 ApplyDamageToTarget(targetGameobj);
+                OnDamageBeingApplied?.Invoke();
             }
             yield return null;
         }
@@ -47,6 +52,7 @@ public class InnerRangeDamage : MonoBehaviour
     private void UpdateCanDamageBool(GameObject targetGameobj) {
         if (targetGameobj is null) {
             _canDamage = false;
+            OnDamageNotBeingApplied?.Invoke();
             return;
         }
 
