@@ -4,22 +4,19 @@
     "EastList": [],
     "WestList": [
         {
-            "instanceID": 17794
+            "instanceID": 17476
         },
         {
-            "instanceID": 17490
+            "instanceID": 17810
         },
         {
-            "instanceID": 17794
+            "instanceID": 17810
         },
         {
-            "instanceID": 17490
+            "instanceID": 17476
         },
         {
-            "instanceID": 17792
-        },
-        {
-            "instanceID": 17490
+            "instanceID": 17476
         }
     ]
 }
