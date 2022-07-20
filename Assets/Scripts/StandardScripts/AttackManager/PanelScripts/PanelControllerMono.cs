@@ -17,7 +17,7 @@ namespace StandardScripts.AttackManager{
         }
 
         private void InitializePanelController() {
-            _panelController = new PanelController(new TestDataBase(), _northPanel.ListPanel, _southPanel.ListPanel,
+            _panelController = new PanelController(new SetupFactory(), _northPanel.ListPanel, _southPanel.ListPanel,
                 _EastPanel.ListPanel, _westPanel.ListPanel);
         }
     }

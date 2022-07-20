@@ -1,0 +1,70 @@
+{
+    "NorthList": [
+        {
+            "instanceID": 18768
+        },
+        {
+            "instanceID": 18764
+        },
+        {
+            "instanceID": 18770
+        },
+        {
+            "instanceID": 18764
+        },
+        {
+            "instanceID": 18768
+        }
+    ],
+    "SouthList": [
+        {
+            "instanceID": 18768
+        },
+        {
+            "instanceID": 18764
+        },
+        {
+            "instanceID": 18770
+        },
+        {
+            "instanceID": 18764
+        },
+        {
+            "instanceID": 18768
+        }
+    ],
+    "EastList": [
+        {
+            "instanceID": 18768
+        },
+        {
+            "instanceID": 18764
+        },
+        {
+            "instanceID": 18770
+        },
+        {
+            "instanceID": 18764
+        },
+        {
+            "instanceID": 18768
+        }
+    ],
+    "WestList": [
+        {
+            "instanceID": 18768
+        },
+        {
+            "instanceID": 18764
+        },
+        {
+            "instanceID": 18770
+        },
+        {
+            "instanceID": 18764
+        },
+        {
+            "instanceID": 18768
+        }
+    ]
+}

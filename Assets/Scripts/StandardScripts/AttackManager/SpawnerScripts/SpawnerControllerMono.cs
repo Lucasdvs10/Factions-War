@@ -11,7 +11,7 @@ namespace StandardScripts.AttackManager{
         private SpawnerBaseController _spawnerBaseController;
 
         public void StartRound() {
-            _spawnerBaseController = new SpawnerBaseController(new TestDataBase(),_northSpawner, _southSpawner, _eastSpawner, _westSpawner);
+            _spawnerBaseController = new SpawnerBaseController(new SetupFactory(),_northSpawner, _southSpawner, _eastSpawner, _westSpawner);
             
             _spawnerBaseController.InitializeSpawners();
             
