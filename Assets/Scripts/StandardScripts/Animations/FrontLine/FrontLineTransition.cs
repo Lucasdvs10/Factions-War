@@ -13,11 +13,10 @@ public class FrontLineTransition : MonoBehaviour
     {
         _frontLineAnimator = GetComponent<Animator>();
         _frontLineAnimator.SetBool("isShooting", false);
-
         _range = transform.Find("Range");
-        _innerRangeDamage = _range.GetComponent<InnerRangeDamage>();
-        _innerRangeDamage.OnDamageBeingApplied += TransitionToShooting;
-        _innerRangeDamage.OnDamageNotBeingApplied += TransitionToWalking;
+        _targetRadar = _range.GetComponent<TargetRadar>();
+        _targetRadar.OnDamageBeingApplied += TransitionToShooting;
+        _targetRadar.OnDamageNotBeingApplied += TransitionToWalking;
 
     }
 
