@@ -32,6 +32,8 @@ namespace StandardScripts.AttackManager {
             if(File.Exists($@"{_folderPath}/{GetCurrentIndex()}.json"))
                 return File.ReadAllText(filePath);
             
+            //Lidando com o que acontece se chegar no último arquivo
+            
             Debug.Log("Esse arquivo nao ecxiste, vou enviar o arquivo anterior");
             return File.ReadAllText($@"{_folderPath}/{GetLastFileIndex()}.json");
         }

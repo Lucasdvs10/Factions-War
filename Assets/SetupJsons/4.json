@@ -1,0 +1,16 @@
+{
+    "NorthList": [
+        "Attacker_Sniper",
+        "Attacker_AK",
+        "Attacker_Tank"
+    ],
+    "SouthList": [
+        "Attacker_Tank",
+        "Attacker_AK",
+        "Attacker_Sniper"
+    ],
+    "EastList": [
+        "Attacker_AK"
+    ],
+    "WestList": []
+}
