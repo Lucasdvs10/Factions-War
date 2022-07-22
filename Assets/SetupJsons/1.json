@@ -1,70 +1,22 @@
 {
     "NorthList": [
-        {
-            "instanceID": 18768
-        },
-        {
-            "instanceID": 18764
-        },
-        {
-            "instanceID": 18770
-        },
-        {
-            "instanceID": 18764
-        },
-        {
-            "instanceID": 18768
-        }
+        "Attacker_AK",
+        "Attacker_Sniper",
+        "Attacker_Tank"
     ],
     "SouthList": [
-        {
-            "instanceID": 18768
-        },
-        {
-            "instanceID": 18764
-        },
-        {
-            "instanceID": 18770
-        },
-        {
-            "instanceID": 18764
-        },
-        {
-            "instanceID": 18768
-        }
+        "Attacker_Tank",
+        "Attacker_Tank",
+        "Attacker_Tank"
     ],
     "EastList": [
-        {
-            "instanceID": 18768
-        },
-        {
-            "instanceID": 18764
-        },
-        {
-            "instanceID": 18770
-        },
-        {
-            "instanceID": 18764
-        },
-        {
-            "instanceID": 18768
-        }
+        "Attacker_Tank",
+        "Attacker_AK",
+        "Attacker_Sniper"
     ],
     "WestList": [
-        {
-            "instanceID": 18768
-        },
-        {
-            "instanceID": 18764
-        },
-        {
-            "instanceID": 18770
-        },
-        {
-            "instanceID": 18764
-        },
-        {
-            "instanceID": 18768
-        }
+        "Attacker_Tank",
+        "Attacker_AK",
+        "Attacker_Sniper"
     ]
 }

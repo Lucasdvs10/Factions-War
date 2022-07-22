@@ -1,5 +1,4 @@
-﻿using AttackManager;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace StandardScripts.AttackManager{
     public class SpawnerControllerMono : MonoBehaviour{
@@ -11,7 +10,11 @@ namespace StandardScripts.AttackManager{
         private SpawnerBaseController _spawnerBaseController;
 
         public void StartRound() {
-            _spawnerBaseController = new SpawnerBaseController(new SetupFactory(),_northSpawner, _southSpawner, _eastSpawner, _westSpawner);
+            var bancoDeDados = new SetupFactory(Application.dataPath + @"\SetupJsons");
+            print(bancoDeDados.GetFolderPath());
+            print(bancoDeDados.GetLastFileIndex());
+            
+            _spawnerBaseController = new SpawnerBaseController(bancoDeDados,_northSpawner, _southSpawner, _eastSpawner, _westSpawner);
             
             _spawnerBaseController.InitializeSpawners();
             

@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using StandardScripts.AttackManager;
+using UnityEngine;
 
 namespace DefaultNamespace {
     public class SetupFactory_Should {
@@ -7,7 +8,7 @@ namespace DefaultNamespace {
         
         [SetUp]
         public void SetupAllTests() {
-            _setupFactory = new SetupFactory();
+            _setupFactory = new SetupFactory(Application.dataPath + @"\SetupJsons");
         }
         
         [Test]

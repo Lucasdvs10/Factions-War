@@ -1,10 +1,11 @@
 ﻿using System.IO;
 using AttackManager;
 using UnityEngine;
+using Application = UnityEngine.WSA.Application;
 
 namespace StandardScripts.AttackManager {
     public class SetupFactory : IBancoDeDados{
-        private string _folderPath = Application.dataPath + @"\SetupJsons";
+        private string _folderPath;
 
         public int GetLastFileIndex() {
             return GetAllFiles().Length;
@@ -21,10 +22,14 @@ namespace StandardScripts.AttackManager {
         }
 
         public string GetJsonStringFromDataBase() {
-            return File.ReadAllText($@"{_folderPath}\{GetLastFileIndex()}.json");
+            return File.ReadAllText($@"{_folderPath}/{GetLastFileIndex()}.json");
         }
         
         public void SetFolderPath(string path) => _folderPath = path;
+        public string GetFolderPath() => _folderPath;
 
+        public SetupFactory(string folderPath) {
+            _folderPath = folderPath;
+        }
     }
 }
