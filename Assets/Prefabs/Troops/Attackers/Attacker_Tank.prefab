@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 714481901792667510, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.36586
+      value: -24.387
       objectReference: {fileID: 0}
     - target: {fileID: 714481901792667510, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -58,7 +58,7 @@ PrefabInstance:
     - target: {fileID: 3641765809246749140, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 9001061646571603553, guid: 872a2d74f96a2a1449a5a327c3fceaa6, type: 3}
+      objectReference: {fileID: -6691781318742736335, guid: 872a2d74f96a2a1449a5a327c3fceaa6, type: 3}
     - target: {fileID: 5040479319971037890, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -99,3 +99,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8269371611883751161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928413904573628238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4f59f57b097da4d8729f59eea19ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
