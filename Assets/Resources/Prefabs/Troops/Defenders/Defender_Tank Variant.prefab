@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1337165618669066642, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
       propertyPath: m_Name
-      value: Defender_Tank
+      value: Defender_Tank Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5155514424300613127, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
       propertyPath: _troopLife
@@ -63,5 +63,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8306612766429859680, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6691781318742736335, guid: 872a2d74f96a2a1449a5a327c3fceaa6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
+--- !u!1 &5423417804460818695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1337165618669066642, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
+  m_PrefabInstance: {fileID: 6470908270374033557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4202568654123163685
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5423417804460818695}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a4fe9e0b17342624d97c1a7ca10ee97d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7782684255923506815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5423417804460818695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4f59f57b097da4d8729f59eea19ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

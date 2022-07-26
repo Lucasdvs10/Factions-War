@@ -11,6 +11,10 @@ public class TargetRadar : MonoBehaviour
     private GameObject _currentTarget = null;
 
     public event Action<GameObject> CurrentTargetChangedEvent;
+    public event Action OnDamageBeingApplied;
+    // These events help in the animations of the troops !
+    public event Action OnDamageNotBeingApplied;
+    public GameObject GetCurrentTarget() => FindClosestTarget();
     
 
     //Adds to the possibleTargets list all Collider2D that enters the trigger from this.gameObject if their tag is the same as targetTag.
@@ -55,12 +59,14 @@ public class TargetRadar : MonoBehaviour
 
 
     private GameObject FindClosestTarget() {
-        if (possibleTargetsList.Count <= 0) return null;
-        
-        
+        if (possibleTargetsList.Count <= 0) {
+            OnDamageNotBeingApplied?.Invoke();
+            return null;
+        }
+            
         var closestTargetDistance = Mathf.Infinity;
         var closestTargetGameobj = gameObject;
-
+        OnDamageBeingApplied?.Invoke();
         foreach (var target in possibleTargetsList) {
             var currentDistanceTarget = Vector3.Distance(target.transform.position, transform.position);
 
