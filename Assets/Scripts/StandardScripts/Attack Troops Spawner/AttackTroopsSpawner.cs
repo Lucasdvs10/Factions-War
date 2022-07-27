@@ -33,10 +33,9 @@ public class AttackTroopsSpawner : MonoBehaviour{
             _troopsToBeSpawnedList.RemoveAt(0);
             
             if(_troopsToBeSpawnedList.Count <= 0) {
-                var k = gameobj.AddComponent<CheckIfTheresTroopLeft>();
+                var checkIfTheresTroopLeft = gameobj.AddComponent<CheckIfTheresTroopLeft>();
             
-                k.TheresNoTroopLeft =
-                    GetComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft;
+                checkIfTheresTroopLeft.TheresNoTroopLeft = GetComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft;
             }
             
             
