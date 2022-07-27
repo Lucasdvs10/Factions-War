@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: _damageDelayInSeconds
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7178697412526959202, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8296844184890685808, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _troopLife
       value: 10

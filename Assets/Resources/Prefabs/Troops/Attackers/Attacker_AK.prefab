@@ -67,6 +67,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4749838471552205000, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749838471552205000, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5999836981359843110, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_Name
       value: Attacker_AK
