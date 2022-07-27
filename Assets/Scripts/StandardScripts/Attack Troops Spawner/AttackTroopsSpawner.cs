@@ -24,11 +24,6 @@ public class AttackTroopsSpawner : MonoBehaviour{
 
     private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop) {
 
-        if(_troopsToBeSpawnedList.Count > 0){
-            _troopsToBeSpawnedList.Last().AddComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft =
-                GetComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft;
-        }
-        
         while (ExistsTroopsInQueueToBeSpawned())
         {
             yield return new WaitForSeconds(SecondsToSpawnTroop);
@@ -36,6 +31,13 @@ public class AttackTroopsSpawner : MonoBehaviour{
             var gameobj = Instantiate(_troopsToBeSpawnedList[0], transform.position, Quaternion.identity);
 
             _troopsToBeSpawnedList.RemoveAt(0);
+            
+            if(_troopsToBeSpawnedList.Count <= 0) {
+                var k = gameobj.AddComponent<CheckIfTheresTroopLeft>();
+            
+                k.TheresNoTroopLeft =
+                    GetComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft;
+            }
             
             
             if(_towerTransform != null) {
