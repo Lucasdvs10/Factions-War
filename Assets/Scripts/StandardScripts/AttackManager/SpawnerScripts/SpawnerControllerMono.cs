@@ -23,10 +23,10 @@ namespace StandardScripts.AttackManager{
 
             _spawnerBaseController.InitializeSpawners();
             
-            _northSpawner.SpawnTroopsInSeconds(3f);
-            _southSpawner.SpawnTroopsInSeconds(3f);
-            _eastSpawner.SpawnTroopsInSeconds(3f);
-            _westSpawner.SpawnTroopsInSeconds(3f);
+            _northSpawner.SpawnTroopsInSeconds(3f, Quaternion.Euler(0,0,180));
+            _southSpawner.SpawnTroopsInSeconds(3f, Quaternion.Euler(0,0,0));
+            _eastSpawner.SpawnTroopsInSeconds(3f, Quaternion.Euler(0,0,90));
+            _westSpawner.SpawnTroopsInSeconds(3f, Quaternion.Euler(0,0,270));
             
         }
         
