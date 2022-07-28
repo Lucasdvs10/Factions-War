@@ -276,6 +276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 8bit (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4226698584829297925, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5650141470165307368, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -328,6 +332,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.16
       objectReference: {fileID: 0}
+    - target: {fileID: 7715758368057378970, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8174019258961970649, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.299
@@ -356,6 +364,10 @@ PrefabInstance:
     - target: {fileID: 4226698584829297925, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
       propertyPath: m_Name
       value: Car 8bit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226698584829297925, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5650141470165307368, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
       propertyPath: m_RootOrder
@@ -400,6 +412,10 @@ PrefabInstance:
     - target: {fileID: 5650141470165307368, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715758368057378970, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8174019258961970649, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
       propertyPath: m_LocalPosition.x
@@ -773,6 +789,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 32bit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1450681221018316158, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655265826498460302, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6956131789810313630, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1070,6 +1094,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 5444202806792814052, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5503423605857401897, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1129,6 +1157,10 @@ PrefabInstance:
     - target: {fileID: 8458123092272750303, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: m_Name
       value: Car 16bit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458123092272750303, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9078480662418915066, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: carSpeed
@@ -1305,6 +1337,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 32bit (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1450681221018316158, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655265826498460302, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6956131789810313630, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1477,7 +1517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1522,7 +1562,7 @@ PrefabInstance:
     - target: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: _towerTransform
       value: 
-      objectReference: {fileID: 1612565739}
+      objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470283, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_Name
       value: Attack Troops Spawner South
@@ -2040,7 +2080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2085,7 +2125,7 @@ PrefabInstance:
     - target: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: _towerTransform
       value: 
-      objectReference: {fileID: 1612565739}
+      objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470283, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_Name
       value: Attack Troops Spawner North
@@ -2199,6 +2239,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.12
       objectReference: {fileID: 0}
+    - target: {fileID: 5444202806792814052, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503423605857401897, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8063022872755180464, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2246,6 +2294,10 @@ PrefabInstance:
     - target: {fileID: 8458123092272750303, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: m_Name
       value: Car 16bit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458123092272750303, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9078480662418915066, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: carSpeed
@@ -2449,7 +2501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780872, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780872, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2589,7 +2641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2634,7 +2686,7 @@ PrefabInstance:
     - target: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: _towerTransform
       value: 
-      objectReference: {fileID: 1612565739}
+      objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470283, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_Name
       value: Attack Troops Spawner East
@@ -2650,7 +2702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138711330}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2665,7 +2717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138711329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.816626, y: -0.6014512, z: -241.9966}
+  m_LocalPosition: {x: 6.816626, y: -0.6014512, z: -245.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 102577129}
@@ -2690,87 +2742,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4605042697478634169, guid: 5d221e4e5680cf942b31c1c8b3faf111, type: 3}
   m_PrefabInstance: {fileID: 811331199}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1194324382
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1194324383}
-  - component: {fileID: 1194324385}
-  - component: {fileID: 1194324384}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1194324383
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194324382}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1519207505}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1194324384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194324382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Iniciar Round
-
-    w'
---- !u!222 &1194324385
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194324382}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1219939805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2781,6 +2752,10 @@ PrefabInstance:
     - target: {fileID: 4172545422583624486, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5444202806792814052, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5503423605857401897, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: m_Sprite
@@ -2833,6 +2808,10 @@ PrefabInstance:
     - target: {fileID: 8458123092272750303, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: m_Name
       value: Car 16bit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458123092272750303, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9078480662418915066, guid: bc16a9091e74de34cb56f29b96e2bb53, type: 3}
       propertyPath: carSpeed
@@ -2957,7 +2936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780872, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780872, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_LocalScale.x
@@ -3036,6 +3015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 8bit
       objectReference: {fileID: 0}
+    - target: {fileID: 4226698584829297925, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5650141470165307368, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3080,6 +3063,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7715758368057378970, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a13d207be8bb2c64e9e2dfb21eb2a178, type: 3}
 --- !u!4 &1488268413 stripped
@@ -3116,15 +3103,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1194324383}
+  m_Children: []
   m_Father: {fileID: 221952187}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.82900006, y: 0.892}
   m_AnchorMax: {x: 0.98300004, y: 0.94273317}
-  m_AnchoredPosition: {x: 0, y: 0.5}
-  m_SizeDelta: {x: 2, y: 1}
+  m_AnchoredPosition: {x: -3.5780945, y: -15.968994}
+  m_SizeDelta: {x: 7.1564, y: 31.9382}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519207506
 MonoBehaviour:
@@ -3145,7 +3131,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3155,8 +3141,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 3e46e80c92306724bb515f019a1028be, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: e38b1859dd2f7564caebee90b116a4a6, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -3215,8 +3201,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 99d822154c395044e911f208b9c96c7e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3247,6 +3233,14 @@ PrefabInstance:
     - target: {fileID: 1450681221018316158, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
       propertyPath: m_Name
       value: Car 32bit
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450681221018316158, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655265826498460302, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6956131789810313630, guid: 5d4d9efdfa057264e88a145c434dd350, type: 3}
       propertyPath: m_RootOrder
@@ -3317,6 +3311,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1377243897841792068, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377243897841792068, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377243897841792075, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1928519832564194101, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: m_Name
       value: Central Tower
@@ -3356,6 +3362,14 @@ PrefabInstance:
     - target: {fileID: 4125775646890839406, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234797180419635496, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234797180419635496, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.8
       objectReference: {fileID: 0}
     - target: {fileID: 9129948387626986722, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: m_RootOrder
@@ -3411,11 +3425,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
---- !u!4 &1612565739 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9129948387626986722, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
-  m_PrefabInstance: {fileID: 1612565738}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1618886021
 GameObject:
   m_ObjectHideFlags: 0
@@ -6465,7 +6474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780872, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780872, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_LocalScale.x
@@ -6566,7 +6575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6611,7 +6620,7 @@ PrefabInstance:
     - target: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: _towerTransform
       value: 
-      objectReference: {fileID: 1612565739}
+      objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470283, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_Name
       value: Attack Troops Spawner West
@@ -6807,7 +6816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780872, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780872, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6955,7 +6964,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2067127507 stripped
 MonoBehaviour:
