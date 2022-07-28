@@ -12,22 +12,22 @@ public class AttackTroopsSpawner : MonoBehaviour{
         _troopsToBeSpawnedList = new List<GameObject>();
     }
 
-    public void SpawnTroopsInSeconds(float SecondsToSpawnTroop)
+    public void SpawnTroopsInSeconds(float SecondsToSpawnTroop, Quaternion direction)
     {
-        StartCoroutine(SpawnTroopsInSecondsCorotine(SecondsToSpawnTroop));
+        StartCoroutine(SpawnTroopsInSecondsCorotine(SecondsToSpawnTroop, direction));
     }
 
     public void AddTroopInTheSpawnQueue(GameObject troop){
         _troopsToBeSpawnedList.Add(troop);
     }
 
-    private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop) {
+    private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop, Quaternion direction) {
 
         while (ExistsTroopsInQueueToBeSpawned())
         {
             yield return new WaitForSeconds(SecondsToSpawnTroop);
 
-            var gameobj = Instantiate(_troopsToBeSpawnedList[0], transform.position, Quaternion.identity);
+            var gameobj = Instantiate(_troopsToBeSpawnedList[0], transform.position, direction);
 
             _troopsToBeSpawnedList.RemoveAt(0);
             
