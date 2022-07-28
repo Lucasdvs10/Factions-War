@@ -1878,6 +1878,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2372074548511415770, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 7c4c7c40346374244b4d9ee8b872be7d, type: 2}
     - target: {fileID: 7257633674772831046, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 13
@@ -2282,6 +2286,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2372074548511415770, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 7c4c7c40346374244b4d9ee8b872be7d, type: 2}
     - target: {fileID: 7257633674772831046, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 13
@@ -5465,6 +5473,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9046004654627523102, guid: 208752f9b5df94a42973ce7412a60071, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: b41fabb9812935c4c999367522b92722, type: 2}
     - target: {fileID: 9046004654627523103, guid: 208752f9b5df94a42973ce7412a60071, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5518,6 +5530,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2372074548511415770, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 7c4c7c40346374244b4d9ee8b872be7d, type: 2}
     - target: {fileID: 7257633674772831046, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 13
@@ -5859,6 +5875,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2372074548511415770, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 7c4c7c40346374244b4d9ee8b872be7d, type: 2}
     - target: {fileID: 7257633674772831046, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 13
