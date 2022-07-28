@@ -9,6 +9,7 @@ TagManager:
   - Attackers
   - Defenders
   - Tower
+  - MoneyUI
   layers:
   - Default
   - TransparentFX

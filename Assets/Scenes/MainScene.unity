@@ -659,6 +659,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 221952187}
     m_Modifications:
+    - target: {fileID: 1097186170924809636, guid: 0bfe59aef6d68244399ec7befef4e18b, type: 3}
+      propertyPath: m_TagString
+      value: MoneyUI
+      objectReference: {fileID: 0}
     - target: {fileID: 1149296098916463889, guid: 0bfe59aef6d68244399ec7befef4e18b, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2027,6 +2031,10 @@ PrefabInstance:
       value: Spawn Area (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: offSet
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: character
       value: 
       objectReference: {fileID: 0}
@@ -2433,6 +2441,10 @@ PrefabInstance:
     - target: {fileID: 8447841571735780874, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_Name
       value: Spawn Area
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: offSet
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: character
@@ -5639,6 +5651,10 @@ PrefabInstance:
       value: Spawn Area (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: offSet
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: character
       value: 
       objectReference: {fileID: 0}
@@ -5966,6 +5982,10 @@ PrefabInstance:
     - target: {fileID: 8447841571735780874, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: m_Name
       value: Spawn Area (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
+      propertyPath: offSet
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8447841571735780875, guid: e42fc5fae4e9c8b4aa5030d00fd62564, type: 3}
       propertyPath: character
