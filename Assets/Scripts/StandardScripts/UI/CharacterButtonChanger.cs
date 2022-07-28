@@ -16,7 +16,6 @@ public class CharacterButtonChanger : MonoBehaviour
 
     //Selects which character will be spawned
     private void ChangeGameObject(){
-
         foreach (var spawnAreaScript in SpawnAreaScriptsList) {
             spawnAreaScript.SetCharacter(character, int.Parse(transform.GetChild(0).GetComponent<Text>().text));
         }
