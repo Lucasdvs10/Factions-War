@@ -13,6 +13,7 @@ public class SoundOnNotBeingAbleToSpawn : MonoBehaviour
 
     private void OnMouseDown()
     {
+        print("TOCANDO");
         _audioSource.Play();
     }
 }
