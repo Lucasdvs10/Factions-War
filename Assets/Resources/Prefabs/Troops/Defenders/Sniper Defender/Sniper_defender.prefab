@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 6039798890072263286}
   - component: {fileID: 6039798890072263287}
   - component: {fileID: 6039798890072263304}
-  - component: {fileID: 6039798890072263305}
   - component: {fileID: 6039798890072263306}
   - component: {fileID: 8958232913558373883}
   - component: {fileID: 7288340831104674438}
+  - component: {fileID: 681730356249396284}
   m_Layer: 0
   m_Name: Sniper_defender
   m_TagString: Untagged
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 9122052807636821191, guid: 2d0e2391d55f8c0418d661ebe8874199, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101,18 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyboardKey: space
---- !u!114 &6039798890072263305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6039798890072263307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04dd5998d74243daa62e0771111fdbea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6039798890072263306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +144,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78ef58159ff242148876874918847769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &681730356249396284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039798890072263307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04dd5998d74243daa62e0771111fdbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8230350629209208080

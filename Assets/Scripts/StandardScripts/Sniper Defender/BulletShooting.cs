@@ -54,11 +54,6 @@ namespace Sniper_Defender{
             
             
             gameobj.GetComponent<Bullet>().SetSpeedVector(new Vector3(direction.x, direction.y, 0f).normalized);
-            
-            // _currentTargetTransform = _currentTargetChanged.GetCurrentTarget().GetComponent<Transform>();
-            // var vectorDirection = (_currentTargetTransform.position - transform.position).normalized;
-            // var rotation = Mathf.Atan2(vectorDirection.y, vectorDirection.x) * Mathf.Rad2Deg - 90f;
-            // transform.eulerAngles = Vector3.forward * rotation;
         }
         
         private void GetMousePosition(Vector3 newMousePosition) {

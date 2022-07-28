@@ -1,9 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DefenderTransition : MonoBehaviour
-    //Tentativa de um script de transicao para o sniper defensor (nao ta funcionando)
 {
     private Animator _animator;
     void Start() {
@@ -11,10 +9,14 @@ public class DefenderTransition : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown("space")){
-            _animator.SetBool("Shooting", true);
-            System.Threading.Thread.Sleep(700);
-            _animator.SetBool("Shooting",false);
+        if (Input.GetKeyDown("space")) {
+            StartCoroutine(SetAnimationForSecondsCoroutine());
         }
+    }
+
+    private IEnumerator SetAnimationForSecondsCoroutine() {
+        _animator.SetBool("Shooting", true);
+        yield return new WaitForSeconds(0.7f);
+        _animator.SetBool("Shooting", false);
     }
 }
