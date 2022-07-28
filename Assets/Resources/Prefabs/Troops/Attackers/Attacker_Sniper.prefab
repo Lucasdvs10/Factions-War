@@ -55,5 +55,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Attacker_Sniper
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7567456682675736525, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
