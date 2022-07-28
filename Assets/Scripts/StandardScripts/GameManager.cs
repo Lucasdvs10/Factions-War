@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public static event Action<GameState> OnGameStateChanged;
     public UnityEvent PreRoundEvent;
     public UnityEvent RoundEvent;
-    public UnityEvent PauseEvent;
     public UnityEvent VictoryEvent;
     public UnityEvent LoseEvent;
 
@@ -38,9 +37,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("Estamos no Round");
             RoundEvent?.Invoke();
                 break;
-            case GameState.Paused:
-                PauseEvent?.Invoke();
-                break;
             case GameState.Victory:
             Debug.Log("Vencemos!");
                 VictoryEvent?.Invoke();
@@ -54,16 +50,12 @@ public class GameManager : MonoBehaviour
         }
         OnGameStateChanged?.Invoke(newState);
     }
-    
+
     public void SetRoundState() {
         UpdateGameState(GameState.Round);
     } 
     public void SetPreRoundState() {
         UpdateGameState(GameState.PreRound);
-    }
-    
-    public void SetPauseState() {
-        UpdateGameState(GameState.Paused);
     }
     
     public void SetWinState() {
