@@ -8,6 +8,8 @@ public class LifeScript : MonoBehaviour
     public static event Action<float> OnDamageFired;
     public static event Action OnZeroLife;
     public float Get_troopLife() => _troopLife;
+
+    public int KillReward = 10;
     
     
     public float ApplyDamage(float damage) {
@@ -15,9 +17,20 @@ public class LifeScript : MonoBehaviour
         _troopLife -= damage;
         if (_troopLife <= 0)
         {
+            if(gameObject.tag == "Attackers")
+            {
+                AddMoney();
+            }
             Destroy(transform.gameObject);
             OnZeroLife?.Invoke();
         }
         return _troopLife;
+    }
+
+    public GameObject[] MoneyUI;
+    void AddMoney()
+    {
+        MoneyUI = GameObject.FindGameObjectsWithTag("MoneyUI");
+        MoneyUI[0].GetComponent<CurrentMoney>().UpdateMoney(KillReward);
     }
 }

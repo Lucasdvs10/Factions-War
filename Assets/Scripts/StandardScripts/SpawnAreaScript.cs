@@ -6,7 +6,7 @@ namespace StandardScripts{
 
     public class SpawnAreaScript : MonoBehaviour, IEventEmitter{
         [SerializeField] private GameObject character;
-        [SerializeField] private int offSet = 12;
+        [SerializeField] private int offSet = 12; //Distance on Z vector from camera to Instantiate position
         [SerializeField] CurrentMoney currentMoney;
 
         int characterCost = 0;
@@ -38,7 +38,7 @@ namespace StandardScripts{
         
             if(currentMoney.GetCurrentMoney >= characterCost)
             {
-                Instantiate(character, Camera.main.ScreenToWorldPoint(Input.mousePosition) + (Vector3.forward * offSet), Quaternion.identity);
+                Instantiate(character, Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, offSet)), Quaternion.identity);
         
                 currentMoney.UpdateMoney(-characterCost);
             
