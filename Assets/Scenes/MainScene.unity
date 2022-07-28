@@ -659,6 +659,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 221952187}
     m_Modifications:
+    - target: {fileID: 1266517051, guid: 0bfe59aef6d68244399ec7befef4e18b, type: 3}
+      propertyPath: passiveValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1097186170924809636, guid: 0bfe59aef6d68244399ec7befef4e18b, type: 3}
       propertyPath: m_TagString
       value: MoneyUI
