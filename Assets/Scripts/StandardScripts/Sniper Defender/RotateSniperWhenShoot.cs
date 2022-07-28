@@ -26,7 +26,7 @@ namespace Sniper_Defender{
         private void Rotate(Vector3 aux) {
             var direction = (_currentMousePosition - transform.position).normalized;
             
-            var rotation = Mathf.Atan2(direction.y, direction.x);
+            var rotation = Mathf.Atan2(-direction.x, direction.y)  * Mathf.Rad2Deg;
 
             transform.rotation = Quaternion.Euler(Vector3.forward * rotation);
         }

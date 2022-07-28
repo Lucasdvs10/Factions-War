@@ -10,7 +10,7 @@ public class SniperDefenderKeyListener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(keyboardKey))
+        if(Input.GetKeyDown(keyboardKey)) 
             WorldMousePosition();
     }
 
