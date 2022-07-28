@@ -1562,7 +1562,7 @@ PrefabInstance:
     - target: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: _towerTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1864398487}
     - target: {fileID: 4284519206328470283, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_Name
       value: Attack Troops Spawner South
@@ -2125,7 +2125,7 @@ PrefabInstance:
     - target: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: _towerTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1864398487}
     - target: {fileID: 4284519206328470283, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_Name
       value: Attack Troops Spawner North
@@ -2686,7 +2686,7 @@ PrefabInstance:
     - target: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: _towerTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1864398487}
     - target: {fileID: 4284519206328470283, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_Name
       value: Attack Troops Spawner East
@@ -3322,6 +3322,10 @@ PrefabInstance:
     - target: {fileID: 1377243897841792075, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377243898569852720, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: _towerHealth
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1928519832564194101, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: m_Name
@@ -6620,7 +6624,7 @@ PrefabInstance:
     - target: {fileID: 4284519206328470281, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: _towerTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1864398487}
     - target: {fileID: 4284519206328470283, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_Name
       value: Attack Troops Spawner West
@@ -6694,6 +6698,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1864398487 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1377243898569852722, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+  m_PrefabInstance: {fileID: 1612565738}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1968260972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4605042697478634169, guid: 5d221e4e5680cf942b31c1c8b3faf111, type: 3}
