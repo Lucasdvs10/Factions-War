@@ -1,6 +1,4 @@
-﻿using System;
-using AttackManager;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace StandardScripts.AttackManager{
     public class SpawnerControllerMono : MonoBehaviour{
