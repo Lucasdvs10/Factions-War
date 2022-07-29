@@ -47,7 +47,7 @@ namespace Sniper_Defender{
         public void InstantiateBullet() {
             var direction = GetBulletDirection();
 
-            var rotation = Mathf.Atan2(direction.y, direction.x)  * Mathf.Rad2Deg;
+            var rotation = Mathf.Atan2(-direction.x, direction.y)  * Mathf.Rad2Deg;
 
             var gameobj = Instantiate(BulletPrefab, transform.position, Quaternion.Euler(rotation * Vector3.forward));
 
