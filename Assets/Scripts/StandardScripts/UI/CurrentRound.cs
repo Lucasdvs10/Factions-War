@@ -11,16 +11,20 @@ public class CurrentRound : MonoBehaviour{
         _text = GetComponent<Text>();
 
     }
-
-
+    
     private void Start() {
         _currentRound = 0;
-        _text.text = _currentRound.ToString();
+        SetText();
     }
     
     public void AddOneRoundAndUpdateUI() {
         _currentRound++;
-        _text.text = _currentRound.ToString();
+        SetText();
     }
+    
+    private void SetText() {
+        _text.text = $"Round: {_currentRound.ToString()}";
+    }
+
     
 }
