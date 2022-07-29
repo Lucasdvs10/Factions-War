@@ -1346,18 +1346,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020458045}
-        m_TargetAssemblyTypeName: CurrentRound, StandardScripts
-        m_MethodName: AddOneRoundAndUpdateUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 728493881}
         m_TargetAssemblyTypeName: StandardScripts.ActivateAndDeactivateGameObjs,
           StandardScripts
@@ -1631,10 +1619,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -1642,7 +1634,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 728493879}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2020458045}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -1650,16 +1650,28 @@ PrefabInstance:
       value: SetPreRoundState
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddOneRoundAndUpdateUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CurrentRound, StandardScripts
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2194,10 +2206,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2205,7 +2221,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 728493879}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2020458045}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2213,11 +2237,23 @@ PrefabInstance:
       value: SetPreRoundState
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddOneRoundAndUpdateUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, StandardScripts
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CurrentRound, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2777,10 +2813,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2788,7 +2828,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 728493879}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2020458045}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2796,16 +2844,28 @@ PrefabInstance:
       value: SetPreRoundState
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddOneRoundAndUpdateUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CurrentRound, StandardScripts
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3509,8 +3569,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1771425244}
     - target: {fileID: 1377243898569852720, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377243898569852720, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: _towerHealth
-      value: 200
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1377243898569852720, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: TowerOnDeath.m_PersistentCalls.m_Calls.Array.size
@@ -3558,7 +3622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1377243898569852722, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1377243898569852722, guid: 30f3791e338d00741916af90a9ea3673, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6586,7 +6650,7 @@ PrefabInstance:
       objectReference: {fileID: 24300002, guid: b41fabb9812935c4c999367522b92722, type: 2}
     - target: {fileID: 9046004654627523103, guid: 208752f9b5df94a42973ce7412a60071, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9046004654627523103, guid: 208752f9b5df94a42973ce7412a60071, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6953,10 +7017,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -6964,7 +7032,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 728493879}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2020458045}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -6972,11 +7048,23 @@ PrefabInstance:
       value: SetPreRoundState
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddOneRoundAndUpdateUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, StandardScripts
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CurrentRound, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -7383,7 +7471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2067127507 stripped
 MonoBehaviour:
@@ -7746,7 +7834,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137291877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 951.33234, y: 529.03723, z: -253.862}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -13,7 +13,7 @@ public class CurrentRound : MonoBehaviour{
     }
     
     private void Start() {
-        _currentRound = 0;
+        _currentRound = 1;
         SetText();
     }
     
