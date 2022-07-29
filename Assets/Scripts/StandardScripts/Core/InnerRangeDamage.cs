@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -11,7 +12,6 @@ public class InnerRangeDamage : MonoBehaviour
     private GameObject _whoToDamage;
     private LifeScript _lifeScriptFromTarget;
     private bool _canDamage = true;
-    
     
     private void Awake() {
         _targetRadar = GetComponent<TargetRadar>();

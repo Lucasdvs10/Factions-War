@@ -25,6 +25,7 @@
 
 # Visual Studio cache directory
 .vs/
+.vsconfig/
 
 # Gradle cache directory
 .gradle/
@@ -72,4 +73,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/Teste.json
 .idea/.idea.Factions-War/.idea/workspace.xml
+Assets/Teste.json
 Assets/Teste.json

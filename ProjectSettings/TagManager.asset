@@ -9,6 +9,7 @@ TagManager:
   - Attackers
   - Defenders
   - Tower
+  - collider
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Balas
   - Defender
   - Attacker
-  - 
+  - Cars
   - 
   - 
   - 
@@ -45,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 1837846419
     locked: 0

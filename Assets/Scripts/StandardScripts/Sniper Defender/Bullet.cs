@@ -26,7 +26,6 @@ namespace Sniper_Defender{
             otherLifeScript?.ApplyDamage(_damageToApply);
             Destroy(transform.gameObject);
         }
-
         public void SetSpeedVector(Vector3 direction) {
             _rgb.velocity = direction * _speed;
         }

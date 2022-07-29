@@ -47,18 +47,13 @@ namespace Sniper_Defender{
         public void InstantiateBullet() {
             var direction = GetBulletDirection();
 
-            var rotation = Mathf.Atan2(direction.y, direction.x)  * Mathf.Rad2Deg;
+            var rotation = Mathf.Atan2(-direction.x, direction.y)  * Mathf.Rad2Deg;
 
             var gameobj = Instantiate(BulletPrefab, transform.position, Quaternion.Euler(rotation * Vector3.forward));
 
             
             
             gameobj.GetComponent<Bullet>().SetSpeedVector(new Vector3(direction.x, direction.y, 0f).normalized);
-            
-            // _currentTargetTransform = _currentTargetChanged.GetCurrentTarget().GetComponent<Transform>();
-            // var vectorDirection = (_currentTargetTransform.position - transform.position).normalized;
-            // var rotation = Mathf.Atan2(vectorDirection.y, vectorDirection.x) * Mathf.Rad2Deg - 90f;
-            // transform.eulerAngles = Vector3.forward * rotation;
         }
         
         private void GetMousePosition(Vector3 newMousePosition) {

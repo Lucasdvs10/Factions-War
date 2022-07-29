@@ -4,18 +4,16 @@ using UnityEngine;
 
 [Serializable]
 public class TroopListGroup{
-    public List<GameObject> NorthList;
-    public List<GameObject> SouthList;
-    public List<GameObject> EastList;
-    public List<GameObject> WestList;
+    public List<string> NorthList;
+    public List<string> SouthList;
+    public List<string> EastList;
+    public List<string> WestList;
 
 
-
-    public TroopListGroup(List<GameObject> northList, List<GameObject> southList, List<GameObject> eastList, List<GameObject> westList) {
+    public TroopListGroup(List<string> northList, List<string> southList, List<string> eastList, List<string> westList) {
         NorthList = northList;
         SouthList = southList;
         EastList = eastList;
         WestList = westList;
     }
-    
 }

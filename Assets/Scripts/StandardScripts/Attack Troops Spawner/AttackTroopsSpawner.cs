@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using StandardScripts.AttackManager;
 using UnityEngine;
 
@@ -13,29 +12,30 @@ public class AttackTroopsSpawner : MonoBehaviour{
         _troopsToBeSpawnedList = new List<GameObject>();
     }
 
-    public void SpawnTroopsInSeconds(float SecondsToSpawnTroop)
+    public void SpawnTroopsInSeconds(float SecondsToSpawnTroop, Quaternion direction)
     {
-        StartCoroutine(SpawnTroopsInSecondsCorotine(SecondsToSpawnTroop));
+        StartCoroutine(SpawnTroopsInSecondsCorotine(SecondsToSpawnTroop, direction));
     }
 
     public void AddTroopInTheSpawnQueue(GameObject troop){
         _troopsToBeSpawnedList.Add(troop);
     }
 
-    private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop) {
+    private IEnumerator SpawnTroopsInSecondsCorotine(float SecondsToSpawnTroop, Quaternion direction) {
 
-        if(_troopsToBeSpawnedList.Count > 0){
-            _troopsToBeSpawnedList.Last().AddComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft =
-                GetComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft;
-        }
-        
         while (ExistsTroopsInQueueToBeSpawned())
         {
             yield return new WaitForSeconds(SecondsToSpawnTroop);
 
-            var gameobj = Instantiate(_troopsToBeSpawnedList[0], transform.position, Quaternion.identity);
+            var gameobj = Instantiate(_troopsToBeSpawnedList[0], transform.position, direction);
 
             _troopsToBeSpawnedList.RemoveAt(0);
+            
+            if(_troopsToBeSpawnedList.Count <= 0) {
+                var checkIfTheresTroopLeft = gameobj.AddComponent<CheckIfTheresTroopLeft>();
+            
+                checkIfTheresTroopLeft.TheresNoTroopLeft = GetComponent<CheckIfTheresTroopLeft>().TheresNoTroopLeft;
+            }
             
             
             if(_towerTransform != null) {

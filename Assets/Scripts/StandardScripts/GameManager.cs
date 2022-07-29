@@ -11,9 +11,9 @@ public class GameManager : MonoBehaviour
     public static event Action<GameState> OnGameStateChanged;
     public UnityEvent PreRoundEvent;
     public UnityEvent RoundEvent;
-    public UnityEvent PauseEvent;
     public UnityEvent VictoryEvent;
     public UnityEvent LoseEvent;
+    public UnityEvent PauseEvent;
 
     void Awake()
     {
@@ -38,9 +38,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("Estamos no Round");
             RoundEvent?.Invoke();
                 break;
-            case GameState.Paused:
-                PauseEvent?.Invoke();
-                break;
             case GameState.Victory:
             Debug.Log("Vencemos!");
                 VictoryEvent?.Invoke();
@@ -49,21 +46,21 @@ public class GameManager : MonoBehaviour
             Debug.Log("Voce perdeu...");
                 LoseEvent?.Invoke();
                 break;
+            case GameState.Paused:
+                Debug.Log("Jogo pausado");
+                PauseEvent?.Invoke();
+                break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, "Deu pau");
         }
         OnGameStateChanged?.Invoke(newState);
     }
-    
+
     public void SetRoundState() {
         UpdateGameState(GameState.Round);
     } 
     public void SetPreRoundState() {
         UpdateGameState(GameState.PreRound);
-    }
-    
-    public void SetPauseState() {
-        UpdateGameState(GameState.Paused);
     }
     
     public void SetWinState() {
@@ -73,6 +70,8 @@ public class GameManager : MonoBehaviour
     public void SetLoseState() {
         UpdateGameState(GameState.Lose);
     }
+
+    public void SetPausedState() => UpdateGameState(GameState.Paused);
 
     public enum GameState
     {
