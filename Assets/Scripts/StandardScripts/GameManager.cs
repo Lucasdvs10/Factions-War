@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent RoundEvent;
     public UnityEvent VictoryEvent;
     public UnityEvent LoseEvent;
+    public UnityEvent PauseEvent;
 
     void Awake()
     {
@@ -45,6 +46,10 @@ public class GameManager : MonoBehaviour
             Debug.Log("Voce perdeu...");
                 LoseEvent?.Invoke();
                 break;
+            case GameState.Paused:
+                Debug.Log("Jogo pausado");
+                PauseEvent?.Invoke();
+                break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, "Deu pau");
         }
@@ -65,6 +70,8 @@ public class GameManager : MonoBehaviour
     public void SetLoseState() {
         UpdateGameState(GameState.Lose);
     }
+
+    public void SetPausedState() => UpdateGameState(GameState.Paused);
 
     public enum GameState
     {

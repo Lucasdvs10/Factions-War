@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
@@ -10,21 +10,31 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    public UnityEvent PauseEvent;
+    public UnityEvent ResumePreRoundEvent;
+    public UnityEvent ResumeRoundEvent;
 
+    private GameManager.GameState _lastState;
 
-    // Resume is called once the game is unpaused
+// Resume is called once the game is unpaused
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
+
+        if (_lastState == GameManager.GameState.Round)
+            ResumeRoundEvent?.Invoke();
+        else if(_lastState == GameManager.GameState.PreRound)
+            ResumePreRoundEvent?.Invoke();
     }
     // Pause is called once the game is paused
-    public void Pause()
-    {
+    public void Pause() {
+        _lastState = GameManager.state;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
+        PauseEvent?.Invoke();
     }
 
     public void LoadMenu()
@@ -39,14 +49,6 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    // Start is called once the game starts
-    void Start()
-    {
-        Resume();
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         // If escape is pressed, pause or resume the game
@@ -61,7 +63,5 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
-
-
     }
 }
