@@ -44,7 +44,7 @@ namespace StandardScripts.AttackManager{
         
 
         private void InitializePanelController() {
-            _panelController = new PanelController(new SetupFactory(Application.dataPath + @"\SetupJsons"), _northListTroopsNames, _southListTroopsNames,
+            _panelController = new PanelController(new SetupFactory(Application.dataPath + @"/StreamingAssets/SetupJsons"), _northListTroopsNames, _southListTroopsNames,
                 _eastListTroopsNames, _westListTroopsNames);
         }
     }

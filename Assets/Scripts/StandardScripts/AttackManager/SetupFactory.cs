@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using AttackManager;
 using UnityEngine;
-using Application = UnityEngine.WSA.Application;
 
 namespace StandardScripts.AttackManager {
     public class SetupFactory : IBancoDeDados{

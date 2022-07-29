@@ -12,7 +12,7 @@ namespace StandardScripts.AttackManager{
         private SpawnerBaseController _spawnerBaseController;
 
         private void Awake() {
-            _bancoDeDados = new SetupFactory(Application.dataPath + @"\SetupJsons");
+            _bancoDeDados = new SetupFactory(Application.dataPath + @"/StreamingAssets/SetupJsons");
             _spawnerBaseController = new SpawnerBaseController(_bancoDeDados,_northSpawner, _southSpawner, _eastSpawner, _westSpawner);
         }
 
