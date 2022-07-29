@@ -1,10 +1,8 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
-{
+public class PauseMenu : MonoBehaviour {
 
     public static bool gameIsPaused = false;
 
@@ -17,8 +15,7 @@ public class PauseMenu : MonoBehaviour
     private GameManager.GameState _lastState;
 
 // Resume is called once the game is unpaused
-    public void Resume()
-    {
+    public void Resume() {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
@@ -43,23 +40,18 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void Quit()
-    {
+    public void Quit() {
         Debug.Log("Quitting");
         Application.Quit();
     }
 
-    void Update()
-    {
+    private void Update() {
         // If escape is pressed, pause or resume the game
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (gameIsPaused)
-            {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (gameIsPaused) {
                 Resume();
             }
-            else
-            {
+            else {
                 Pause();
             }
         }

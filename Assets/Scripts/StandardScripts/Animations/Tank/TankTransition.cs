@@ -6,18 +6,17 @@ public class TankTransition : MonoBehaviour
     private Animator _animator;
     private int _isTarget = 0;
 
-    void Start()
+    private void Awake()
     {
         _animator = GetComponent<Animator>();
     }
 
-    void Update()
+    private void Update()
     {
         _isTargetOf = GetAllThoseWhoAim();
-        foreach (GameObject whoAim in _isTargetOf)
-        {
+        foreach (GameObject whoAim in _isTargetOf) {
             TargetRadar theTarget = whoAim.GetComponentInChildren<TargetRadar>();
-            if (theTarget.GetCurrentTarget() == gameObject)
+            if (theTarget?.GetCurrentTarget() == gameObject)
             {
                 _isTarget++;
             }

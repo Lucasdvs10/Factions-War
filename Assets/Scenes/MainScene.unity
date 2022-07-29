@@ -1317,6 +1317,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 728493881}
+        m_TargetAssemblyTypeName: StandardScripts.ActivateAndDeactivateGameObjs,
+          StandardScripts
+        m_MethodName: ActivateGameObjs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   RoundEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1646,7 +1659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2465,7 +2478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &983454509
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2792,7 +2805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2881,7 +2894,7 @@ Transform:
   - {fileID: 182642817}
   - {fileID: 10501012}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1167698431 stripped
 RectTransform:
@@ -6145,7 +6158,7 @@ Transform:
   m_LocalScale: {x: 1, y: 8.9116, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1699307144
 MonoBehaviour:
@@ -6565,7 +6578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046004654627523096, guid: 208752f9b5df94a42973ce7412a60071, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9046004654627523102, guid: 208752f9b5df94a42973ce7412a60071, type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -6639,7 +6652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1136097012577003462, guid: 0667c9a887dbcdc498d7e1242c4e071d, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1136097012577003462, guid: 0667c9a887dbcdc498d7e1242c4e071d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7370,7 +7383,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2067127507 stripped
 MonoBehaviour:
@@ -7695,7 +7708,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  ResumeEvent:
+  ResumePreRoundEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 728493879}
+        m_TargetAssemblyTypeName: GameManager, StandardScripts
+        m_MethodName: SetPreRoundState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ResumeRoundEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 728493879}

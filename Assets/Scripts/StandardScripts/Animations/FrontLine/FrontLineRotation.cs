@@ -1,5 +1,3 @@
-using System.Collections;
-using Unity;
 using UnityEngine;
 
 public class FrontLineRotation : MonoBehaviour
@@ -7,10 +5,15 @@ public class FrontLineRotation : MonoBehaviour
 
     private TargetRadar _currentTargetChanged;
     private Transform _currentTargetTransform;
+    private Quaternion _initialRotation;
+
+    private void Awake() {
+        _currentTargetChanged = GetComponentInChildren<TargetRadar>();
+        _initialRotation = transform.rotation;
+    }
 
     void FixedUpdate()
     {
-        _currentTargetChanged = GetComponentInChildren<TargetRadar>();
         if (_currentTargetChanged.GetCurrentTarget() != null)
         {
             _currentTargetTransform = _currentTargetChanged.GetCurrentTarget().GetComponent<Transform>();
@@ -18,10 +21,10 @@ public class FrontLineRotation : MonoBehaviour
             var rotation = Mathf.Atan2(vectorDirection.y, vectorDirection.x) * Mathf.Rad2Deg - 90f;
             transform.eulerAngles = Vector3.forward * rotation;
         }
-        else
-        {
-            transform.rotation = Quaternion.identity;
+        else {
+            transform.rotation = _initialRotation;
         }
+
 
     }
 
