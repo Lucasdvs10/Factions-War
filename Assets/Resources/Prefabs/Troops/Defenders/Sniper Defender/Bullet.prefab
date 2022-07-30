@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _bulletLifeTime: 10
-  _damageToApply: 100
+  _damageToApply: 50
 --- !u!70 &4723751294594245248
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -136,8 +136,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.99999994, y: 2}
-  m_Direction: 1
+  m_Size: {x: 0.09, y: 0.18}
+  m_Direction: 0
 --- !u!95 &6675637834689770597
 Animator:
   serializedVersion: 3

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 450698562326569139, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: _troopLife
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 714481901792667510, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_RootOrder
@@ -69,7 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5607332543267351169, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: _regularSpeed
-      value: 2
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607332543267351169, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
+      propertyPath: _speedWhenShooting
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5999836981359843110, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_Name

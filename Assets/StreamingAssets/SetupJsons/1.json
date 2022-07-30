@@ -3,11 +3,13 @@
         "Attacker_AK"
     ],
     "SouthList": [
-        "Attacker_Tank"
+        "Attacker_AK"
     ],
     "EastList": [
-
+        "Attacker_Tank"
     ],
     "WestList": [
+        "Attacker_AK",
+        "Attacker_AK"
     ]
 }

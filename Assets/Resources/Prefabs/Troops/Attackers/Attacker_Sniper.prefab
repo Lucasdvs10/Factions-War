@@ -51,6 +51,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5607332543267351169, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
+      propertyPath: _regularSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607332543267351169, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
+      propertyPath: _speedWhenShooting
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5999836981359843110, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_Name
       value: Attacker_Sniper
