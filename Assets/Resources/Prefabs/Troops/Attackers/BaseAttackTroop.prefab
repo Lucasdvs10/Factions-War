@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 114972405036935462, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_Radius
-      value: 1.78
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 114972405036935462, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: m_IsTrigger
@@ -49,15 +49,15 @@ PrefabInstance:
       objectReference: {fileID: -8358372163801004607, guid: b96d3282ca8e029498dad50623b4932b, type: 3}
     - target: {fileID: 6961627290489240821, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _damage
-      value: 5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6961627290489240821, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _damageDelayInSeconds
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8296844184890685808, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: _troopLife
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8296844184890685808, guid: b4de11ea7cbc5ec4a80d1645f02a38fe, type: 3}
       propertyPath: MoneyUI.Array.size

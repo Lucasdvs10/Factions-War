@@ -17,9 +17,10 @@ GameObject:
   - component: {fileID: 7288340831104674438}
   - component: {fileID: -48025131129466106}
   - component: {fileID: -8084105368699579986}
-  m_Layer: 0
+  - component: {fileID: -4604504644812829859}
+  m_Layer: 7
   m_Name: Sniper_defender
-  m_TagString: Untagged
+  m_TagString: Defenders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 2854758799559981011, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}
-  _shotCooldown: 0.5
+  _shotCooldown: 1
 --- !u!95 &8958232913558373883
 Animator:
   serializedVersion: 3
@@ -269,6 +270,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-4604504644812829859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039798890072263307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5501f9c9b265bc64e808ba97a0d7d2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _troopLife: 10
+  KillReward: 0
+  MoneyUI: []
 --- !u!1 &8230350629209208080
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +297,7 @@ GameObject:
   - component: {fileID: 3404179106569375814}
   - component: {fileID: 5343698782802409265}
   - component: {fileID: 7909397017850028825}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Troop_Size
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +333,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.145735
+  m_Radius: 1.5
 --- !u!82 &5343698782802409265
 AudioSource:
   m_ObjectHideFlags: 0

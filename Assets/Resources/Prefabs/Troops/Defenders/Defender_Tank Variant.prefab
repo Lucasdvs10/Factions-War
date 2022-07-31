@@ -67,8 +67,12 @@ PrefabInstance:
       value: Defender_Tank Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5155514424300613127, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
+      propertyPath: KillReward
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155514424300613127, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
       propertyPath: _troopLife
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5199260052436429250, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
       propertyPath: m_RootOrder
