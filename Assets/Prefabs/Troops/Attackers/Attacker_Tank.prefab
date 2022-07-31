@@ -8,8 +8,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 450698562326569139, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
+      propertyPath: KillReward
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 450698562326569139, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: _troopLife
-      value: 25
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 714481901792667510, guid: bd63b539da2387a4ba7d492b96b8af7b, type: 3}
       propertyPath: m_RootOrder

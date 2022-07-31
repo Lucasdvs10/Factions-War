@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6039798890072263304}
   - component: {fileID: 6039798890072263305}
   - component: {fileID: 6039798890072263306}
+  - component: {fileID: 7539101519200776020}
   - component: {fileID: 8958232913558373883}
   - component: {fileID: 7288340831104674438}
   - component: {fileID: -48025131129466106}
@@ -128,7 +129,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 2854758799559981011, guid: be9a1085e98abe54ab14f5f11f247903, type: 3}
-  _shotCooldown: 0.5
+  _shotCooldown: 1.2
+--- !u!114 &7539101519200776020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039798890072263307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5501f9c9b265bc64e808ba97a0d7d2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _troopLife: 15
+  KillReward: 1
+  MoneyUI: []
 --- !u!95 &8958232913558373883
 Animator:
   serializedVersion: 3
