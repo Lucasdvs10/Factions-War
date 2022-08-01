@@ -26,9 +26,8 @@ public class Tank_Area_Spawn : MonoBehaviour, IEventEmitter{
    private void OnMouseDown() {
         if (_currentMoney.GetCurrentMoney >= _troopCost) {
             Instantiate(_prefabToInstantiate, Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * offSet, Quaternion.Euler(0,0,_angle));
-            _currentMoney.UpdateMoney(-_troopCost);
+            _currentMoney.UpdateMoney(-15);
             CharacterCreationEvent?.Invoke();
         }
    }
-
 }

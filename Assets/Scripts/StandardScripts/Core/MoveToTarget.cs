@@ -28,6 +28,8 @@ public class MoveToTarget : MonoBehaviour
         if(targetRadar != null) {
             targetRadar.CurrentTargetChangedEvent += ApplySpeedWhenShooting;
         }
+        targetRadar.CurrentTargetChangedEvent += ApplyRegularSpeed2;
+
     }
     
     private void OnDisable() {
@@ -36,6 +38,8 @@ public class MoveToTarget : MonoBehaviour
         if(targetRadar != null) {
             targetRadar.CurrentTargetChangedEvent -= ApplySpeedWhenShooting;
         }
+        targetRadar.CurrentTargetChangedEvent -= ApplyRegularSpeed2;
+
     }
 
 
@@ -65,6 +69,12 @@ public class MoveToTarget : MonoBehaviour
 
     private void ApplyRegularSpeed()
     {
+        _actualSpeed = _regularSpeed;
+    }
+    
+    private void ApplyRegularSpeed2(GameObject targetShot)
+    {
+        if(targetShot != null) return;
         _actualSpeed = _regularSpeed;
     }
 

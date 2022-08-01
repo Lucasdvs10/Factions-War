@@ -2,6 +2,8 @@
     "NorthList": [
         "Attacker_AK",
         "Attacker_Tank",
+        "Attacker_Tank",
+        "Attacker_AK",
         "Attacker_AK",
         "Attacker_Tank",
         "Attacker_Sniper"
@@ -9,12 +11,18 @@
     "SouthList": [
         "Attacker_AK",
         "Attacker_Tank",
+        "Attacker_Tank",
         "Attacker_AK",
-        "Attacker_Tank"
+        "Attacker_AK",
+        "Attacker_Tank",
+        "Attacker_Sniper",
+        "Attacker_Sniper"
     ],
     "EastList": [
         "Attacker_AK",
         "Attacker_Tank",
+        "Attacker_Tank",
+        "Attacker_AK",
         "Attacker_AK",
         "Attacker_Tank",
         "Attacker_Sniper"
@@ -22,7 +30,11 @@
     "WestList": [
         "Attacker_AK",
         "Attacker_Tank",
+        "Attacker_Tank",
         "Attacker_AK",
-        "Attacker_Tank"
+        "Attacker_AK",
+        "Attacker_Tank",
+        "Attacker_Sniper",
+        "Attacker_Sniper"
     ]
 }

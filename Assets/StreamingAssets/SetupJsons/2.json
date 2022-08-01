@@ -1,8 +1,18 @@
 {
-    "NorthList": [],
-    "SouthList": [],
-    "EastList": [
+    "NorthList": [
+        "Attacker_AK",
+        "Attacker_Tank"
+    ],
+    "SouthList": [
+        "Attacker_Sniper",
         "Attacker_AK"
     ],
-    "WestList": []
+    "EastList": [
+        "Attacker_AK",
+        "Attacker_Tank"
+    ],
+    "WestList": [
+        "Attacker_Sniper",
+        "Attacker_AK"
+    ]
 }

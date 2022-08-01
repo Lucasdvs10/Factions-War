@@ -8,6 +8,7 @@ namespace StandardScripts{
 
         private void Start() {
             _tankAreaSpawnsList = FindObjectsOfType<Tank_Area_Spawn>().ToList();
+            DeactivateTankAreas();
         }
 
         public void ActivateTankAreas() {
