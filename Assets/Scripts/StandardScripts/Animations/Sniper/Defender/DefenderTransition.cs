@@ -16,7 +16,7 @@ public class DefenderTransition : MonoBehaviour
 
     private IEnumerator SetAnimationForSecondsCoroutine() {
         _animator.SetBool("Shooting", true);
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.4f);
         _animator.SetBool("Shooting", false);
     }
 }
