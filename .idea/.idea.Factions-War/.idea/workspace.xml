@@ -1,89 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
+    <list default="true" id="3d14d187-1470-4c05-9e39-8d32765d1784" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/Panel Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/Panel Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/SpawnerManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/SpawnerManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AttackSetupPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AttackSetupPanel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game Test Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/AttackPanelManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/AttackPanelManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/FirebaseManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/FirebaseManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/IBancoDeDados.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/IBancoDeDados.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/Manager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/Manager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/SpawnerManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/SpawnerManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/TestDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/AttackManager/TestDataBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTests/FakeDataBaseShould.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTests/FakeDataBaseShould.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTests/UnitTests.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/UnitTests.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitTests/UnitTests.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitTests/UnitTests.asmdef.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Teste.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Teste.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/Sound/PlaySound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/Sound/PlaySound.cs" afterDir="false" />
     </list>
-=======
-<<<<<<< Updated upstream
-    <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="" />
-=======
-    <list default="true" id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions-War/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sniper Defender/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sniper Defender/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sniper Defender/SniperDefender.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sniper Defender/SniperDefender.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawn Area.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawn Area.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Troops/Base Defender troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Troops/Base Defender troop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Troops/Base Troop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Troops/Base Troop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Troops/BaseAttackTroop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Troops/BaseAttackTroop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game Test Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sample_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/Sniper Defender/BulletShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StandardScripts/Sniper Defender/BulletShooting.cs" afterDir="false" />
-    </list>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitTests/JsonHandler_Should.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StandardScripts/Sniper Defender/BulletShooting.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="27z8ICuJOZ0Bofxs3r1p5BG1DK1" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2DSJBYWj2CKc69aoq5onO0DzWwx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34993774" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "rider.run.widget.enabled.cache": "false",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Unity.exe" />
-      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Enrico\Documents\GitHub\Factions-War -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Enrico/Documents/GitHub/Factions-War" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Coisas de Programação\Projetos Unity\Factions-War&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Coisas de Programação\Projetos Unity\Factions-War" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
@@ -98,10 +49,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9028">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9028" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -112,37 +63,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fe451ab9-41f7-489d-b5e0-bf2ae931a1cc" name="Changes" comment="" />
-      <created>1650311477861</created>
+      <changelist id="3d14d187-1470-4c05-9e39-8d32765d1784" name="Changes" comment="" />
+      <created>1660686421564</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650311477861</updated>
-      <workItem from="1650311513135" duration="584000" />
-      <workItem from="1650312791060" duration="1487000" />
-      <workItem from="1650934445949" duration="402000" />
-      <workItem from="1651519680940" duration="595000" />
-      <workItem from="1651964881628" duration="1095000" />
-      <workItem from="1652060279455" duration="775000" />
-      <workItem from="1652825359226" duration="617000" />
-      <workItem from="1652826154079" duration="1979000" />
-      <workItem from="1652828850946" duration="800000" />
-      <workItem from="1653087080038" duration="460000" />
-      <workItem from="1653087885305" duration="3045000" />
-      <workItem from="1653678167715" duration="721000" />
-      <workItem from="1654092310368" duration="3118000" />
-<<<<<<< Updated upstream
-      <workItem from="1654175830174" duration="1550000" />
-      <workItem from="1654189635921" duration="2078000" />
-      <workItem from="1654191835116" duration="8248000" />
-=======
-<<<<<<< Updated upstream
-=======
-      <workItem from="1654175830174" duration="1550000" />
-      <workItem from="1654189635921" duration="2078000" />
-      <workItem from="1654191835116" duration="8393000" />
-      <workItem from="1655226974911" duration="1081000" />
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+      <updated>1660686421564</updated>
+      <workItem from="1660686431831" duration="128000" />
+      <workItem from="1660686600602" duration="221000" />
     </task>
     <servers />
   </component>
@@ -152,19 +79,4 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
 </project>
