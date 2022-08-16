@@ -1401,6 +1401,9 @@ GameObject:
   - component: {fileID: 728493878}
   - component: {fileID: 728493877}
   - component: {fileID: 728493881}
+  - component: {fileID: 728493882}
+  - component: {fileID: 728493883}
+  - component: {fileID: 728493884}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1535,6 +1538,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 728493882}
+        m_TargetAssemblyTypeName: PlaySound, StandardScripts
+        m_MethodName: playSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   PauseEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1582,6 +1597,130 @@ MonoBehaviour:
   - {fileID: 98270544}
   - {fileID: 573368517}
   - {fileID: 2121874544}
+--- !u!114 &728493882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728493876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af9c6fad4151304db32607e5d1626df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPlayer: {fileID: 728493883}
+  audioClip: {fileID: 8300000, guid: 0986bbb206d53bd4cabc5507dfd115d7, type: 3}
+--- !u!82 &728493883
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728493876}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &728493884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728493876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af9c6fad4151304db32607e5d1626df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPlayer: {fileID: 728493883}
+  audioClip: {fileID: 8300000, guid: c79ac9532a37238489e915173c02ae54, type: 3}
 --- !u!1001 &776580991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1765,7 +1904,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1773,6 +1912,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -1784,11 +1927,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2020458045}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 728493884}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -1800,6 +1951,10 @@ PrefabInstance:
       value: AddOneRoundAndUpdateUI
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, StandardScripts
       objectReference: {fileID: 0}
@@ -1808,11 +1963,19 @@ PrefabInstance:
       value: CurrentRound, StandardScripts
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PlaySound, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2352,7 +2515,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2360,6 +2523,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2371,11 +2538,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2020458045}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 728493884}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2387,6 +2562,10 @@ PrefabInstance:
       value: AddOneRoundAndUpdateUI
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, StandardScripts
       objectReference: {fileID: 0}
@@ -2395,11 +2574,19 @@ PrefabInstance:
       value: CurrentRound, StandardScripts
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PlaySound, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2953,7 +3140,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2961,6 +3148,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2972,11 +3163,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2020458045}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 728493884}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -2988,6 +3187,10 @@ PrefabInstance:
       value: AddOneRoundAndUpdateUI
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, StandardScripts
       objectReference: {fileID: 0}
@@ -2996,11 +3199,19 @@ PrefabInstance:
       value: CurrentRound, StandardScripts
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PlaySound, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -7301,7 +7512,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -7309,6 +7520,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -7320,11 +7535,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2020458045}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 728493884}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
@@ -7336,6 +7559,10 @@ PrefabInstance:
       value: AddOneRoundAndUpdateUI
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: playSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, StandardScripts
       objectReference: {fileID: 0}
@@ -7344,11 +7571,19 @@ PrefabInstance:
       value: CurrentRound, StandardScripts
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PlaySound, StandardScripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
       propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230425721084965078, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
+      propertyPath: TheresNoTroopLeft.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4284519206328470280, guid: 93ae09d0d529a484c9b91f86a0cd1bf7, type: 3}
