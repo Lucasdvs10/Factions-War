@@ -24,22 +24,22 @@ public class MoveToTarget : MonoBehaviour
 
     private void OnEnable() {
         var targetRadar = GetComponentInChildren<TargetRadar>();
-
+        
         if(targetRadar != null) {
-            targetRadar.CurrentTargetChangedEvent += ApplySpeedWhenShooting;
+            targetRadar.TargetIsNotTank += ApplySpeedWhenShooting;
+            targetRadar.TargetIsTank += ApplyZeroSpeed;
+            targetRadar.TargetIsKilled += ApplyRegularSpeed;
         }
-        targetRadar.CurrentTargetChangedEvent += ApplyRegularSpeed2;
-
     }
     
     private void OnDisable() {
         var targetRadar = GetComponentInChildren<TargetRadar>();
 
         if(targetRadar != null) {
-            targetRadar.CurrentTargetChangedEvent -= ApplySpeedWhenShooting;
+            targetRadar.TargetIsNotTank -= ApplySpeedWhenShooting;
+            targetRadar.TargetIsTank -= ApplyZeroSpeed;
+            targetRadar.TargetIsKilled -= ApplyRegularSpeed;
         }
-        targetRadar.CurrentTargetChangedEvent -= ApplyRegularSpeed2;
-
     }
 
 
@@ -61,9 +61,8 @@ public class MoveToTarget : MonoBehaviour
         _rigidbody.velocity = velocity;
     }
 
-    private void ApplySpeedWhenShooting(GameObject targetShot)
+    private void ApplySpeedWhenShooting()
     {
-        if(targetShot == null) return;
         _actualSpeed = _speedWhenShooting;
     }
 
@@ -76,6 +75,11 @@ public class MoveToTarget : MonoBehaviour
     {
         if(targetShot != null) return;
         _actualSpeed = _regularSpeed;
+    }
+
+    private void ApplyZeroSpeed()
+    {
+        _actualSpeed = 0f;
     }
 
     public void SetTarget(Transform targetGameobj) {

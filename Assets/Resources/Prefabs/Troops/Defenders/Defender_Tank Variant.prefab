@@ -66,6 +66,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Defender_Tank Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1337165618669066642, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
+      propertyPath: m_TagString
+      value: Defenders
+      objectReference: {fileID: 0}
     - target: {fileID: 5155514424300613127, guid: d589326097e351f4ca99f61f74f0318c, type: 3}
       propertyPath: KillReward
       value: 0
