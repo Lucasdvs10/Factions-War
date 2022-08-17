@@ -7,8 +7,6 @@ public class TargetRadar : MonoBehaviour
     //Tag of objects to be targeted.
     [SerializeField] string targetTag = "Target";
 
-    private string tankTag = "Tank";
-
     List<Collider2D> possibleTargetsList = new List<Collider2D>();
     private GameObject _currentTarget = null;
 
@@ -38,7 +36,7 @@ public class TargetRadar : MonoBehaviour
     //Removes from the possibleTargets list all Collider2D that exits the trigger from this.gameObject.
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag(targetTag) | other.CompareTag(tankTag))
+        if (other.CompareTag(targetTag))
         {
             TargetIsKilled?.Invoke();
         }
