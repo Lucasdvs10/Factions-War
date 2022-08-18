@@ -16,7 +16,7 @@ public class CurrentMoney : MonoBehaviour
     public void UpdateMoney(int value) {
         //Maybe control money limit with Mathf.Clamp
         _currentMoney += value;
-        _currentMoney = Mathf.Clamp(_currentMoney, 0, 10000);
+        _currentMoney = Mathf.Clamp(_currentMoney, 0, 300);
     }
 
     public int GetCurrentMoney => _currentMoney;
