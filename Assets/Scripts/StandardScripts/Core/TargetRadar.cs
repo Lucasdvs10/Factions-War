@@ -10,6 +10,9 @@ public class TargetRadar : MonoBehaviour
     List<Collider2D> possibleTargetsList = new List<Collider2D>();
     private GameObject _currentTarget = null;
 
+    public event Action TargetIsTank;
+    public event Action TargetIsNotTank;
+    public event Action TargetIsKilled;
     public event Action<GameObject> CurrentTargetChangedEvent;
     public event Action OnDamageBeingApplied;
     // These events help in the animations of the troops !
@@ -33,6 +36,11 @@ public class TargetRadar : MonoBehaviour
     //Removes from the possibleTargets list all Collider2D that exits the trigger from this.gameObject.
     void OnTriggerExit2D(Collider2D other)
     {
+        if (other.CompareTag(targetTag))
+        {
+            TargetIsKilled?.Invoke();
+        }
+
         if (possibleTargetsList.Contains(other))
         {
             possibleTargetsList.Remove(other);
@@ -54,6 +62,16 @@ public class TargetRadar : MonoBehaviour
 
         if (oldTarget != _currentTarget) {
             CurrentTargetChangedEvent?.Invoke(_currentTarget);
+            if (_currentTarget.GetComponent<TankTransition>())
+            {
+                TargetIsTank?.Invoke();
+                Debug.Log("É tanque");
+            }
+            else
+            {
+                TargetIsNotTank?.Invoke();
+                Debug.Log("Não é tanque");
+            }
         }
     }
 
